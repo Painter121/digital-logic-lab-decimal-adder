@@ -1,6 +1,6 @@
 # Digital Logic — 12-Bit Decimal (BCD) Adder System
 
-มินิโปรเจกต์ออกแบบและพัฒนาวงจรบวกเลขฐานสิบ (Decimal / BCD Adder) ขนาด 12-bit จากการวางลอจิกและสร้างบล็อกวงจรย่อยด้วยตนเองทั้งหมด ออกแบบโดยใช้โปรแกรม Quartus II เพื่อลงบนชิป Altera FPGA (FLEX10K - EPF10K10LC84-4) พร้อมการจำลองสัญญาณ Waveform
+มินิโปรเจกต์ออกแบบและพัฒนาวงจรบวกเลขฐานสิบ (Decimal / BCD Adder) ขนาด 12-bit จากการวางลอจิกและสร้างบล็อกวงจรย่อยด้วยตนเองทั้งหมด ออกแบบโดยใช้โปรแกรม Quartus II เพื่อลงบนชิป Altera FPGA (FLEX10K - EPF10K10LC84-4) พร้อมการจำลองสัญญาณ Waveform และการต่อทดสอบวงจรจริง
 
 ---
 
@@ -43,7 +43,25 @@
 
 ---
 
-## 3. การจำลองสัญญาณเวลา (Waveform Simulation)
+## 3. การจำลองวงจรบน Breadboard (Simulation Prototype)
+
+การต่อวงจรจำลองลอจิกพื้นฐานสำหรับการบวกและลบเลขฐานสอง (Adder / Subtractor) บนเบรดบอร์ดเสมือนจริง โดยใช้ไอซีลอจิก 74HC86 (XOR gates) สำหรับกลับบิตสัญญาณ และไอซี 74HC283 (4-Bit Binary Full Adder) พร้อมดิปสวิตช์อินพุตและหลอด LED แสดงผลลัพธ์การคำนวณ
+
+![Breadboard Adder Subtractor Simulation](assets/breadboard-adder-simulation.png)
+
+---
+
+## 4. การต่อวงจรทดสอบบนบอร์ด FPGA จริง (Hardware Implementation)
+
+การดาวน์โหลดวงจรที่ออกแบบจากโปรแกรม Quartus II ลงบนบอร์ดทดลอง FPGA จริง (ASTRON LOGIC WIZARD FLEXMAX-A01) ผ่านสายดาวน์โหลด USB Blaster เพื่อทดสอบการทำงานร่วมกับสวิตช์อินพุต ไฟแสดงสถานะ Logic Monitor และโมดูลแสดงผล 7-Segment Display
+
+| การต่อสายและรันวงจรบนบอร์ดทดลอง | ชิป Altera FLEX 10K (EPF10K10LC84) | ส่วนควบคุม 7-Segment Multiplex |
+|:---:|:---:|:---:|
+| ![FPGA Trainer Board Setup](assets/fpga-trainer-board-setup.jpg) | ![Altera FLEX 10K FPGA](assets/fpga-altera-chip-closeup.jpg) | ![7-Segment Multiplex Display](assets/fpga-7segment-multiplex.jpg) |
+
+---
+
+## 5. การจำลองสัญญาณเวลา (Waveform Simulation)
 
 ระบบผ่านการทดสอบและยืนยันความถูกต้องของการคำนวณด้วยไฟล์การจำลองสัญญาณ Waveform (`miniProjectAdder.vwf`) ใน Quartus II เพื่อตรวจสอบ:
 - ความถูกต้องของการบวกเลขในทุกกรณีทดสอบ (รวมถึงกรณีมีตัวทดข้ามหลัก)
@@ -51,7 +69,7 @@
 
 ---
 
-## 4. รายละเอียดไฟล์ในโปรเจกต์
+## 6. รายละเอียดไฟล์ในโปรเจกต์
 
 | ไฟล์ | หน้าที่ |
 |---|---|
@@ -60,3 +78,4 @@
 | `miniProjectAdder.qsf` | การตั้งค่าโปรเจกต์และการกำหนด Pin Assignment สำหรับ FPGA |
 | `miniProjectAdder.vwf` | การจำลองรูปคลื่นสัญญาณ (Timing Waveform Simulation) |
 | `*.bdf` / `*.bsf` | ไฟล์วงจรและสัญลักษณ์ของแต่ละโมดูลย่อย (12bit, 16mux4, Count4, Decode2to4, TestProSelect, LHHL, Multiplex) |
+| `assets/` | รูปภาพจำลองวงจรบน Breadboard และภาพการทดสอบบนบอร์ดฮาร์ดแวร์ FPGA จริง |

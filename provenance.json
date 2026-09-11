@@ -1,990 +1,128 @@
 [
   {
     "source": "Lab Quartus\\miniProjectAdder\\12bit.bdf",
-    "destination": "01-decimal-adder/12bit.bdf",
+    "destination": "12bit.bdf",
     "source_sha256": "fafc0c375af67c01b6c520816889c441ecd5b3e997f6d99d6cea1c572c6e2c70",
     "sha256": "fafc0c375af67c01b6c520816889c441ecd5b3e997f6d99d6cea1c572c6e2c70",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\12bit.bsf",
-    "destination": "01-decimal-adder/12bit.bsf",
+    "destination": "12bit.bsf",
     "source_sha256": "33d875f04880b7eb57f4ea16508dd01f3c7ab011283199b8ca7dee60d8bca3c5",
     "sha256": "33d875f04880b7eb57f4ea16508dd01f3c7ab011283199b8ca7dee60d8bca3c5",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\16mux4.bdf",
-    "destination": "01-decimal-adder/16mux4.bdf",
+    "destination": "16mux4.bdf",
     "source_sha256": "886c7a197dd4281006161f830c48e3ef5b2e2739d668b8069c4cbcd3e704ed8f",
     "sha256": "886c7a197dd4281006161f830c48e3ef5b2e2739d668b8069c4cbcd3e704ed8f",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\16mux4.bsf",
-    "destination": "01-decimal-adder/16mux4.bsf",
+    "destination": "16mux4.bsf",
     "source_sha256": "91778ae0009ec26ac6d26e2b9020739f79916221faa3e654bf091d6dc7b92447",
     "sha256": "91778ae0009ec26ac6d26e2b9020739f79916221faa3e654bf091d6dc7b92447",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\Count4.bdf",
-    "destination": "01-decimal-adder/Count4.bdf",
+    "destination": "Count4.bdf",
     "source_sha256": "a573020d9a9674d8a5299005abb4c459bd7c2d62b0e161f274c288ea57d70b34",
     "sha256": "a573020d9a9674d8a5299005abb4c459bd7c2d62b0e161f274c288ea57d70b34",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\Count4.bsf",
-    "destination": "01-decimal-adder/Count4.bsf",
+    "destination": "Count4.bsf",
     "source_sha256": "b372c624e64aed377a073b04701c914a4e5ed859cc34913d95b16f16a0b40224",
     "sha256": "b372c624e64aed377a073b04701c914a4e5ed859cc34913d95b16f16a0b40224",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\Decode2to4.bdf",
-    "destination": "01-decimal-adder/Decode2to4.bdf",
+    "destination": "Decode2to4.bdf",
     "source_sha256": "13b29ae5639ea9ae93707ca1631fd3eef7d0143f7261d298c124a2ec26565745",
     "sha256": "13b29ae5639ea9ae93707ca1631fd3eef7d0143f7261d298c124a2ec26565745",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\Decode2to4.bsf",
-    "destination": "01-decimal-adder/Decode2to4.bsf",
+    "destination": "Decode2to4.bsf",
     "source_sha256": "5b34975426fe2a25438ad2a41da6d989881b1f6c3b8bf30e192e8feabbb42b51",
     "sha256": "5b34975426fe2a25438ad2a41da6d989881b1f6c3b8bf30e192e8feabbb42b51",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\LHHL.bdf",
-    "destination": "01-decimal-adder/LHHL.bdf",
+    "destination": "LHHL.bdf",
     "source_sha256": "0b8937dfce2c0575807b973c17f351a5a88202f5fc41398b57c3630a90ba1601",
     "sha256": "0b8937dfce2c0575807b973c17f351a5a88202f5fc41398b57c3630a90ba1601",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\LHHL.bsf",
-    "destination": "01-decimal-adder/LHHL.bsf",
+    "destination": "LHHL.bsf",
     "source_sha256": "3ee3109593c0607384d7e69089daaeee14553f1698593ad51fb5182cc87a5662",
     "sha256": "3ee3109593c0607384d7e69089daaeee14553f1698593ad51fb5182cc87a5662",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\miniProjectAdder.bdf",
-    "destination": "01-decimal-adder/miniProjectAdder.bdf",
+    "destination": "miniProjectAdder.bdf",
     "source_sha256": "5eabd9c3c2845df6ecf099e1072246514d2dc3d06d2d138dc78f717c4848617c",
     "sha256": "5eabd9c3c2845df6ecf099e1072246514d2dc3d06d2d138dc78f717c4848617c",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\miniProjectAdder.qpf",
-    "destination": "01-decimal-adder/miniProjectAdder.qpf",
+    "destination": "miniProjectAdder.qpf",
     "source_sha256": "3cafa40350561886e148d635780ea624d54620ea0b9dce96f8aeff763824ab7e",
     "sha256": "3cafa40350561886e148d635780ea624d54620ea0b9dce96f8aeff763824ab7e",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\miniProjectAdder.qsf",
-    "destination": "01-decimal-adder/miniProjectAdder.qsf",
+    "destination": "miniProjectAdder.qsf",
     "source_sha256": "055c6333300a82088fcbf5d21c811ee5050fee6cfa66e0cb23e22fa94b1ff38e",
     "sha256": "4261a9d0302c6edad1b0788564736e12ebf9c1561bc165e08319d7cc6cf3893f",
     "modified": true
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\miniProjectAdder.vwf",
-    "destination": "01-decimal-adder/miniProjectAdder.vwf",
+    "destination": "miniProjectAdder.vwf",
     "source_sha256": "27838ac5b021fd07f78b132ca1a0334557ce192bd79121ae329d6c7d4e41136e",
     "sha256": "27838ac5b021fd07f78b132ca1a0334557ce192bd79121ae329d6c7d4e41136e",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\Multiplex.bdf",
-    "destination": "01-decimal-adder/Multiplex.bdf",
+    "destination": "Multiplex.bdf",
     "source_sha256": "5da9adcd04dbf6834f42972917915689690ddec6cbe68455b9c3751039c04549",
     "sha256": "5da9adcd04dbf6834f42972917915689690ddec6cbe68455b9c3751039c04549",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\Multiplex.bsf",
-    "destination": "01-decimal-adder/Multiplex.bsf",
+    "destination": "Multiplex.bsf",
     "source_sha256": "cf8719eab95e67dc36bdf987b66b10433c678296c565d64225d01263b952c501",
     "sha256": "cf8719eab95e67dc36bdf987b66b10433c678296c565d64225d01263b952c501",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\TestProSelect.bdf",
-    "destination": "01-decimal-adder/TestProSelect.bdf",
+    "destination": "TestProSelect.bdf",
     "source_sha256": "0fe6140145328280dc30338a5cd891b5eba4f7041ff4e5ec072d14acbc9b32c0",
     "sha256": "0fe6140145328280dc30338a5cd891b5eba4f7041ff4e5ec072d14acbc9b32c0",
     "modified": false
   },
   {
     "source": "Lab Quartus\\miniProjectAdder\\TestProSelect.bsf",
-    "destination": "01-decimal-adder/TestProSelect.bsf",
+    "destination": "TestProSelect.bsf",
     "source_sha256": "16384a7115dc408b8c341e768d450bc9aa9c1c0b1cb11a5abcc5156ce7f194d0",
     "sha256": "16384a7115dc408b8c341e768d450bc9aa9c1c0b1cb11a5abcc5156ce7f194d0",
-    "modified": false
-  },
-  {
-    "source": "micro controller\\codeProject.txt",
-    "destination": "02-fan-controller/main.py",
-    "source_sha256": "dcc1a20d059f0ae4c8e56f85c0d2bf7021dde6b7c90f18f86d86adf94b982495",
-    "sha256": "e524abcbd6903e99f718fcc9bcfe360be9495ed225d4cbfa019295b7cd63d93b",
-    "modified": true,
-    "note": "Converted trailing Thai note into a Python comment; original unchanged."
-  },
-  {
-    "source": "จารย์คอสmini\\code mini pro.txt",
-    "destination": "03-soil-moisture/soil_moisture/soil_moisture.ino",
-    "source_sha256": "a6b31691070bfa86f6ae9992f511e888c21bda059851637582ca0d26254b4092",
-    "sha256": "9c136ae123d6b09df08410d64998a768f1015635ebc47460b75970c73ac34b2c",
-    "modified": true
-  },
-  {
-    "source": "java oop\\Store\\src\\Cart.java",
-    "destination": "04-java-oop/Store/src/Cart.java",
-    "source_sha256": "806fd861367e4bce1477b9e1a564c8e36622fbd6515952b3e50993b51cbf4da0",
-    "sha256": "806fd861367e4bce1477b9e1a564c8e36622fbd6515952b3e50993b51cbf4da0",
-    "modified": false
-  },
-  {
-    "source": "java oop\\Store\\src\\Main.java",
-    "destination": "04-java-oop/Store/src/Main.java",
-    "source_sha256": "73857fc1f9e74e9ffc46c6d64ad5243d25b61fe043103dbf21b74dea3c27ec9d",
-    "sha256": "73857fc1f9e74e9ffc46c6d64ad5243d25b61fe043103dbf21b74dea3c27ec9d",
-    "modified": false
-  },
-  {
-    "source": "java oop\\Store\\src\\Stock.java",
-    "destination": "04-java-oop/Store/src/Stock.java",
-    "source_sha256": "bdffe6588ec88455af24a6e1ab8cddb672a941f36e06af8a36188d6920c9f74d",
-    "sha256": "bdffe6588ec88455af24a6e1ab8cddb672a941f36e06af8a36188d6920c9f74d",
-    "modified": false
-  },
-  {
-    "source": "java oop\\Store\\src\\StoreGUI.java",
-    "destination": "04-java-oop/Store/src/StoreGUI.java",
-    "source_sha256": "50db28ffd5e4ea9ab6e9ef23526a4e2b320c1609c28b0e4a71d08d360811e8f3",
-    "sha256": "50db28ffd5e4ea9ab6e9ef23526a4e2b320c1609c28b0e4a71d08d360811e8f3",
-    "modified": false
-  },
-  {
-    "source": "java oop\\Bank\\src\\Account.java",
-    "destination": "04-java-oop/Bank/src/Account.java",
-    "source_sha256": "694a54ba3ab642d721ddea88b6c9bd5938be26142e10f297c994174fbcf80246",
-    "sha256": "694a54ba3ab642d721ddea88b6c9bd5938be26142e10f297c994174fbcf80246",
-    "modified": false
-  },
-  {
-    "source": "java oop\\Bank\\src\\AccountGUI.java",
-    "destination": "04-java-oop/Bank/src/AccountGUI.java",
-    "source_sha256": "14ef4ca3c1ad888a997f06265bcb89151d7131fa78a0607747c70d58701b8570",
-    "sha256": "14ef4ca3c1ad888a997f06265bcb89151d7131fa78a0607747c70d58701b8570",
-    "modified": false
-  },
-  {
-    "source": "java oop\\Bank\\src\\BankGUI.java",
-    "destination": "04-java-oop/Bank/src/BankGUI.java",
-    "source_sha256": "0acee13bf96697b7fad65032f2ad55f35809b846d925413f7af3a88faedf3ab6",
-    "sha256": "0acee13bf96697b7fad65032f2ad55f35809b846d925413f7af3a88faedf3ab6",
-    "modified": false
-  },
-  {
-    "source": "java oop\\Bank\\src\\Main.java",
-    "destination": "04-java-oop/Bank/src/Main.java",
-    "source_sha256": "37a90d9976cd47d160aedd4d817aaec794d946de39c773347898a7a510d9ba9a",
-    "sha256": "37a90d9976cd47d160aedd4d817aaec794d946de39c773347898a7a510d9ba9a",
-    "modified": false
-  },
-  {
-    "source": "java oop\\Lab8\\src\\PainterCafe.java",
-    "destination": "04-java-oop/Lab8/src/PainterCafe.java",
-    "source_sha256": "2d4845e0e383812c55079a43519875bd296a8e7d8f51d84186f568e3d68f3b6a",
-    "sha256": "2d4845e0e383812c55079a43519875bd296a8e7d8f51d84186f568e3d68f3b6a",
-    "modified": false
-  },
-  {
-    "source": "java oop\\Lab10-File\\src\\FileReadWriteGUI.java",
-    "destination": "04-java-oop/Lab10-File/src/FileReadWriteGUI.java",
-    "source_sha256": "dfd07bdb48d1e5c182c2056255a6090265beb63bc7884edbd2a3312a4c55ec3f",
-    "sha256": "dfd07bdb48d1e5c182c2056255a6090265beb63bc7884edbd2a3312a4c55ec3f",
-    "modified": false
-  },
-  {
-    "source": "c++\\GraphMST\\main.cpp",
-    "destination": "05-data-structures/GraphMST/main.cpp",
-    "source_sha256": "b71cff16a3b32e9d8b835471a9afbbe3bed384513925eae2fe8e0008c269cfaf",
-    "sha256": "b71cff16a3b32e9d8b835471a9afbbe3bed384513925eae2fe8e0008c269cfaf",
-    "modified": false
-  },
-  {
-    "source": "c++\\DoublyLinkedList\\main.cpp",
-    "destination": "05-data-structures/DoublyLinkedList/main.cpp",
-    "source_sha256": "80ba04db9fa24c8b43b58ba2814bd430e59e6c6d028067aaecaa7395a204ad08",
-    "sha256": "80ba04db9fa24c8b43b58ba2814bd430e59e6c6d028067aaecaa7395a204ad08",
-    "modified": false
-  },
-  {
-    "source": "c++\\CheckBalance2\\main.cpp",
-    "destination": "05-data-structures/CheckBalance2/main.cpp",
-    "source_sha256": "925192c4c84a2a98dfe4fbf2060f6437537f054190c80bdb89f029f361b31eb6",
-    "sha256": "925192c4c84a2a98dfe4fbf2060f6437537f054190c80bdb89f029f361b31eb6",
-    "modified": false
-  },
-  {
-    "source": "c++\\BinarySearchTree2\\main.cpp",
-    "destination": "05-data-structures/BinarySearchTree2/main.cpp",
-    "source_sha256": "82dc30c9947a3b7209d59b846a1d6185fe4a3a439dcf0769a1c8177c2ec4b258",
-    "sha256": "82dc30c9947a3b7209d59b846a1d6185fe4a3a439dcf0769a1c8177c2ec4b258",
-    "modified": false
-  },
-  {
-    "source": "c++\\singlyLinkList\\main.cpp",
-    "destination": "05-data-structures/singlyLinkList/main.cpp",
-    "source_sha256": "997d9959aa5c0791cdf1f0c9f97234c4f19431ea4a86ad93795fe0f7b558afb3",
-    "sha256": "997d9959aa5c0791cdf1f0c9f97234c4f19431ea4a86ad93795fe0f7b558afb3",
-    "modified": false
-  },
-  {
-    "source": "c++\\Sort\\main.cpp",
-    "destination": "05-data-structures/Sort/main.cpp",
-    "source_sha256": "b0a48b83bb12fd450975d0e369069d5e55c125670e71999f0605e9b57433b7a8",
-    "sha256": "b0a48b83bb12fd450975d0e369069d5e55c125670e71999f0605e9b57433b7a8",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\NodeJsSystem\\index.js",
-    "destination": "06-zoo-database/NodeJsSystem/index.js",
-    "source_sha256": "55e97ad7be16eaa6f27b10977d1a17176560f4742be5deffedc66ad7ab10bb85",
-    "sha256": "55e97ad7be16eaa6f27b10977d1a17176560f4742be5deffedc66ad7ab10bb85",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\NodeJsSystem\\package-lock.json",
-    "destination": "06-zoo-database/NodeJsSystem/package-lock.json",
-    "source_sha256": "363d860c6765b9584bdfd4201b8c68a76eb2d779b53bd73fe4abe2c9f6a68e89",
-    "sha256": "363d860c6765b9584bdfd4201b8c68a76eb2d779b53bd73fe4abe2c9f6a68e89",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\NodeJsSystem\\package.json",
-    "destination": "06-zoo-database/NodeJsSystem/package.json",
-    "source_sha256": "13ff725c92888c4cbefd6fb67b5e7c4d15e6f287e1c7995660982383b34f44c3",
-    "sha256": "13ff725c92888c4cbefd6fb67b5e7c4d15e6f287e1c7995660982383b34f44c3",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\NodeJsSystem\\Routers\\Admin\\animal.js",
-    "destination": "06-zoo-database/NodeJsSystem/Routers/Admin/animal.js",
-    "source_sha256": "916681e3dec2fcfea8dc242efc078599649c26495ac6474ce51701712a8f683c",
-    "sha256": "916681e3dec2fcfea8dc242efc078599649c26495ac6474ce51701712a8f683c",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\NodeJsSystem\\Routers\\Admin\\animalCare.js",
-    "destination": "06-zoo-database/NodeJsSystem/Routers/Admin/animalCare.js",
-    "source_sha256": "340cb51918539bcd9fb337d25ac55c69fed115ab209aa86d0de4fc7f40b8bd46",
-    "sha256": "340cb51918539bcd9fb337d25ac55c69fed115ab209aa86d0de4fc7f40b8bd46",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\NodeJsSystem\\Routers\\Admin\\category.js",
-    "destination": "06-zoo-database/NodeJsSystem/Routers/Admin/category.js",
-    "source_sha256": "dd3adcb90b5be1a2d30f63014ab171afd708b417d6e41bbc43d2d7ec64926d6f",
-    "sha256": "dd3adcb90b5be1a2d30f63014ab171afd708b417d6e41bbc43d2d7ec64926d6f",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\NodeJsSystem\\Routers\\Admin\\Dashboard.js",
-    "destination": "06-zoo-database/NodeJsSystem/Routers/Admin/Dashboard.js",
-    "source_sha256": "b05487678fccdbb1aecee333b7b54267377e403ec4c753049cf825faa862cc31",
-    "sha256": "b05487678fccdbb1aecee333b7b54267377e403ec4c753049cf825faa862cc31",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\NodeJsSystem\\Routers\\Admin\\employee.js",
-    "destination": "06-zoo-database/NodeJsSystem/Routers/Admin/employee.js",
-    "source_sha256": "49cf3671c28b566deea3910a09b7c29630435205a539cc707190788950676118",
-    "sha256": "49cf3671c28b566deea3910a09b7c29630435205a539cc707190788950676118",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\NodeJsSystem\\Routers\\Admin\\zone.js",
-    "destination": "06-zoo-database/NodeJsSystem/Routers/Admin/zone.js",
-    "source_sha256": "4f9783b57601c3a2db01297efbd551bc31b03d53f05af81f2422a105346a45c6",
-    "sha256": "4f9783b57601c3a2db01297efbd551bc31b03d53f05af81f2422a105346a45c6",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\NodeJsSystem\\Routers\\User\\animalUser.js",
-    "destination": "06-zoo-database/NodeJsSystem/Routers/User/animalUser.js",
-    "source_sha256": "633a89fe1eb84296d67be0ef9cc53ebd3279a18f4a666106b1b2eb845ab7148a",
-    "sha256": "633a89fe1eb84296d67be0ef9cc53ebd3279a18f4a666106b1b2eb845ab7148a",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\NodeJsSystem\\Routers\\User\\Favorite.js",
-    "destination": "06-zoo-database/NodeJsSystem/Routers/User/Favorite.js",
-    "source_sha256": "f4ed29812461c3280249f30e18231d363da064383c20af02ce8e6633cd8dcd98",
-    "sha256": "f4ed29812461c3280249f30e18231d363da064383c20af02ce8e6633cd8dcd98",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\NodeJsSystem\\Routers\\User\\User.js",
-    "destination": "06-zoo-database/NodeJsSystem/Routers/User/User.js",
-    "source_sha256": "aabb7d9fab35f984b663f7a278e8cf2291b1fa485359b4656b431ab4bf8b9712",
-    "sha256": "b27f775dca3a6abe36e082256135ee6133f416fb6a033351ae594cd0d73bbdfa",
-    "modified": true
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\NodeJsSystem\\Routers\\User\\wildLife.js",
-    "destination": "06-zoo-database/NodeJsSystem/Routers/User/wildLife.js",
-    "source_sha256": "f51957bbe75020b5585c84c972ff95581c2d8f7b9e7a6d45b8bad11061b9896e",
-    "sha256": "f51957bbe75020b5585c84c972ff95581c2d8f7b9e7a6d45b8bad11061b9896e",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\admin.css",
-    "destination": "06-zoo-database/code/css/admin.css",
-    "source_sha256": "072dbc2afea5ab42df2fbd18327591655d64ecc85d9d63463c5437ee0522ba9d",
-    "sha256": "072dbc2afea5ab42df2fbd18327591655d64ecc85d9d63463c5437ee0522ba9d",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\Dashboard.css",
-    "destination": "06-zoo-database/code/css/Dashboard.css",
-    "source_sha256": "dd48cc70850241afe74f915be322aad6a06005a00e6db4ecfbd65847c6ce8ba9",
-    "sha256": "dd48cc70850241afe74f915be322aad6a06005a00e6db4ecfbd65847c6ce8ba9",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\Favorites.css",
-    "destination": "06-zoo-database/code/css/Favorites.css",
-    "source_sha256": "22a6abdc0124a98f83a2c3f6ca9d2b9393ad813a99146b5e846fdc37d551a45b",
-    "sha256": "22a6abdc0124a98f83a2c3f6ca9d2b9393ad813a99146b5e846fdc37d551a45b",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\ForgotPassword.css",
-    "destination": "06-zoo-database/code/css/ForgotPassword.css",
-    "source_sha256": "e019ca7713fa638a1c376192647863da6a3616a45368e7aef2f3031728448c75",
-    "sha256": "e019ca7713fa638a1c376192647863da6a3616a45368e7aef2f3031728448c75",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\Home.css",
-    "destination": "06-zoo-database/code/css/Home.css",
-    "source_sha256": "f1c76cc66295dcd71901329ed4394551aec921d1aee78e44d512c0fc276dc744",
-    "sha256": "f1c76cc66295dcd71901329ed4394551aec921d1aee78e44d512c0fc276dc744",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\Login.css",
-    "destination": "06-zoo-database/code/css/Login.css",
-    "source_sha256": "216c1d973a33501a9b0438e54c8bfa40d96d3751d4785822bd4fc3e9c1209ca8",
-    "sha256": "216c1d973a33501a9b0438e54c8bfa40d96d3751d4785822bd4fc3e9c1209ca8",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\register.css",
-    "destination": "06-zoo-database/code/css/register.css",
-    "source_sha256": "f5a05fdfa7e8e62d575c4ce8e253b8ce7b5050b91530b4232d4ff19f227af59f",
-    "sha256": "f5a05fdfa7e8e62d575c4ce8e253b8ce7b5050b91530b4232d4ff19f227af59f",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\tool.css",
-    "destination": "06-zoo-database/code/css/tool.css",
-    "source_sha256": "b82220594af323686b23fc650fcc9ef76ca62968b2abf5ed02b50b958c967873",
-    "sha256": "b82220594af323686b23fc650fcc9ef76ca62968b2abf5ed02b50b958c967873",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\UserRegister.css",
-    "destination": "06-zoo-database/code/css/UserRegister.css",
-    "source_sha256": "ee44335c6ce6ab0c578902992acbbf2492a8223454778951594aa352b4c09306",
-    "sha256": "ee44335c6ce6ab0c578902992acbbf2492a8223454778951594aa352b4c09306",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\About.html",
-    "destination": "06-zoo-database/code/html/About.html",
-    "source_sha256": "038ff62b56d9f8ee21cf6b90944639926c184d0db64e1e8752472f0282f681c3",
-    "sha256": "038ff62b56d9f8ee21cf6b90944639926c184d0db64e1e8752472f0282f681c3",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\admin.html",
-    "destination": "06-zoo-database/code/html/admin.html",
-    "source_sha256": "b3c804e3ef01fa5160818ec634c26621642698c4e488a57c0e4888dbcce8b809",
-    "sha256": "b3c804e3ef01fa5160818ec634c26621642698c4e488a57c0e4888dbcce8b809",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\Contact.html",
-    "destination": "06-zoo-database/code/html/Contact.html",
-    "source_sha256": "ad2a24b66fa2f13013f1292712ef2c0188972f2b8e2e8da4165496a01131118b",
-    "sha256": "ad2a24b66fa2f13013f1292712ef2c0188972f2b8e2e8da4165496a01131118b",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\Dashboard.html",
-    "destination": "06-zoo-database/code/html/Dashboard.html",
-    "source_sha256": "9650ec2c1793dc0ff1389c4331bb98416605cf2ad297ff8d6c09796889c7f91d",
-    "sha256": "9650ec2c1793dc0ff1389c4331bb98416605cf2ad297ff8d6c09796889c7f91d",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\Favorites.html",
-    "destination": "06-zoo-database/code/html/Favorites.html",
-    "source_sha256": "47f08d4d329703a5e19aab254f831016308e708ac315acf84c82eda5af6e0fed",
-    "sha256": "47f08d4d329703a5e19aab254f831016308e708ac315acf84c82eda5af6e0fed",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\ForgotPassword.html",
-    "destination": "06-zoo-database/code/html/ForgotPassword.html",
-    "source_sha256": "85571ab434abfc974a147d60a2518800feb567d943f656f9ba6b8e52cf86654a",
-    "sha256": "85571ab434abfc974a147d60a2518800feb567d943f656f9ba6b8e52cf86654a",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\Home.html",
-    "destination": "06-zoo-database/code/html/Home.html",
-    "source_sha256": "746011c2f67922d50b88ffe0a524a9425f30f3db41ba87608282bf891212d0bd",
-    "sha256": "746011c2f67922d50b88ffe0a524a9425f30f3db41ba87608282bf891212d0bd",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\Login.html",
-    "destination": "06-zoo-database/code/html/Login.html",
-    "source_sha256": "7aa68ec3914a105edd5f256d5e3f2abcefa4f5eb462b3c256a727e6e7829a766",
-    "sha256": "7aa68ec3914a105edd5f256d5e3f2abcefa4f5eb462b3c256a727e6e7829a766",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\register.html",
-    "destination": "06-zoo-database/code/html/register.html",
-    "source_sha256": "9eef37addc573d77b247dda0be4bbdddd662c2a138f979b52edc2bb93c7f6e72",
-    "sha256": "9eef37addc573d77b247dda0be4bbdddd662c2a138f979b52edc2bb93c7f6e72",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\tool.html",
-    "destination": "06-zoo-database/code/html/tool.html",
-    "source_sha256": "e40042849206369072b33bd1c430ca1e6d11305e61ae94d57e95a1cb60e09a88",
-    "sha256": "e40042849206369072b33bd1c430ca1e6d11305e61ae94d57e95a1cb60e09a88",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\UserRegister.html",
-    "destination": "06-zoo-database/code/html/UserRegister.html",
-    "source_sha256": "5891cd2aba07b880cc5c6851153fa6ca5f913910409e6207289d1f744d4077e2",
-    "sha256": "5891cd2aba07b880cc5c6851153fa6ca5f913910409e6207289d1f744d4077e2",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\admin.js",
-    "destination": "06-zoo-database/code/js/admin.js",
-    "source_sha256": "c168db52126690f429a747a4ddfd6c08f0328cc60778b22c4bf926781ceb7fe7",
-    "sha256": "c168db52126690f429a747a4ddfd6c08f0328cc60778b22c4bf926781ceb7fe7",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\Dashboard.js",
-    "destination": "06-zoo-database/code/js/Dashboard.js",
-    "source_sha256": "0935dbd5bde53916d50d9727cfcdaaf346a7ab153fc125e9d7d073ecffd59e42",
-    "sha256": "0935dbd5bde53916d50d9727cfcdaaf346a7ab153fc125e9d7d073ecffd59e42",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\Favorites.js",
-    "destination": "06-zoo-database/code/js/Favorites.js",
-    "source_sha256": "44795d0273de66a1a1795894a8ac91249a28ca1f7bdbe321df26fa351c7ba115",
-    "sha256": "44795d0273de66a1a1795894a8ac91249a28ca1f7bdbe321df26fa351c7ba115",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\ForgotPassword.js",
-    "destination": "06-zoo-database/code/js/ForgotPassword.js",
-    "source_sha256": "10ea2ec8164ce1fb1d7c19d2cfe8ad99741b4d05ceb4d61a4be6cc12734c3bf5",
-    "sha256": "10ea2ec8164ce1fb1d7c19d2cfe8ad99741b4d05ceb4d61a4be6cc12734c3bf5",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\Home.js",
-    "destination": "06-zoo-database/code/js/Home.js",
-    "source_sha256": "f9ff60da12a64bad7379f983fdf23b2c0e0f27b10b5ae9d711e57de7f3ee40db",
-    "sha256": "f9ff60da12a64bad7379f983fdf23b2c0e0f27b10b5ae9d711e57de7f3ee40db",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\Login.js",
-    "destination": "06-zoo-database/code/js/Login.js",
-    "source_sha256": "8ce5ffcba6a36c72ee220be03354a2f8b60e286fcfe52bd5724fbcdbb33a4fd2",
-    "sha256": "8ce5ffcba6a36c72ee220be03354a2f8b60e286fcfe52bd5724fbcdbb33a4fd2",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\register.js",
-    "destination": "06-zoo-database/code/js/register.js",
-    "source_sha256": "378477a4ff48714db5eedad7d7f4a5881e8a2f58ea825e7094a1725e89e1f68d",
-    "sha256": "378477a4ff48714db5eedad7d7f4a5881e8a2f58ea825e7094a1725e89e1f68d",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\tool.js",
-    "destination": "06-zoo-database/code/js/tool.js",
-    "source_sha256": "973fa618eaa18f264cb864edd8360d4a1008b4d82f08dd0ce475063d47def889",
-    "sha256": "973fa618eaa18f264cb864edd8360d4a1008b4d82f08dd0ce475063d47def889",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\UserRegister.js",
-    "destination": "06-zoo-database/code/js/UserRegister.js",
-    "source_sha256": "8ae1c60158bf55cbf8266f3893b83c0e7722c0f695fe0052cfdbfa5591f8c1bd",
-    "sha256": "8ae1c60158bf55cbf8266f3893b83c0e7722c0f695fe0052cfdbfa5591f8c1bd",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\UserDE\\Amphibious.js",
-    "destination": "06-zoo-database/code/js/UserDE/Amphibious.js",
-    "source_sha256": "663201600c1b4cfa580ff9262f7dad654028937bcbe1cc6dbad391eeea6f3d60",
-    "sha256": "663201600c1b4cfa580ff9262f7dad654028937bcbe1cc6dbad391eeea6f3d60",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\UserDE\\AnimalDetail.js",
-    "destination": "06-zoo-database/code/js/UserDE/AnimalDetail.js",
-    "source_sha256": "2f551a8904841a8c9318631b6dc70a6854a22690e2597ed00d1fd18d41c0d7da",
-    "sha256": "2f551a8904841a8c9318631b6dc70a6854a22690e2597ed00d1fd18d41c0d7da",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\UserDE\\animallist.js",
-    "destination": "06-zoo-database/code/js/UserDE/animallist.js",
-    "source_sha256": "cbb9952ea0c994a10f9b3850423d7cc021cb0353579c20d3f19d3b0c4900ee47",
-    "sha256": "cbb9952ea0c994a10f9b3850423d7cc021cb0353579c20d3f19d3b0c4900ee47",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\UserDE\\BirdsZone.js",
-    "destination": "06-zoo-database/code/js/UserDE/BirdsZone.js",
-    "source_sha256": "083e7143dd0873aaa4fec6b1478b97ea57de5a54f3a3d3c045d92d38138df2a2",
-    "sha256": "083e7143dd0873aaa4fec6b1478b97ea57de5a54f3a3d3c045d92d38138df2a2",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\UserDE\\Profile.js",
-    "destination": "06-zoo-database/code/js/UserDE/Profile.js",
-    "source_sha256": "29240d1d19cf4bb09f926281b522f9b14c0200417e90c4a78311f1e8adf87f54",
-    "sha256": "29240d1d19cf4bb09f926281b522f9b14c0200417e90c4a78311f1e8adf87f54",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\UserDE\\WaterZone.js",
-    "destination": "06-zoo-database/code/js/UserDE/WaterZone.js",
-    "source_sha256": "ea197062122d298c3b5a1c3344e54816f9ffc8ac362e5448d8befc53dd7e7e71",
-    "sha256": "ea197062122d298c3b5a1c3344e54816f9ffc8ac362e5448d8befc53dd7e7e71",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\UserDE\\WildLife.js",
-    "destination": "06-zoo-database/code/js/UserDE/WildLife.js",
-    "source_sha256": "293e114c159fc5f1a5d3ecfee15ccc7467c6cdff0b24bc7d978cbfae0babfb37",
-    "sha256": "293e114c159fc5f1a5d3ecfee15ccc7467c6cdff0b24bc7d978cbfae0babfb37",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\animal\\animalsDetails.js",
-    "destination": "06-zoo-database/code/js/adminDE/animal/animalsDetails.js",
-    "source_sha256": "b07dee235afc3929aaf25cd8399d920641f20bb10221f8a32dde6ffd13e83aff",
-    "sha256": "b07dee235afc3929aaf25cd8399d920641f20bb10221f8a32dde6ffd13e83aff",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\animal\\insertAnimal.js",
-    "destination": "06-zoo-database/code/js/adminDE/animal/insertAnimal.js",
-    "source_sha256": "060a7b72551104ad47dd97f6847539f890e74459737e5ee44095463411a3a790",
-    "sha256": "060a7b72551104ad47dd97f6847539f890e74459737e5ee44095463411a3a790",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\animal\\viewData.js",
-    "destination": "06-zoo-database/code/js/adminDE/animal/viewData.js",
-    "source_sha256": "a9cab35849c41becf6181c50292627d1db3c4aa15e0943738f502b21f3d1a91f",
-    "sha256": "a9cab35849c41becf6181c50292627d1db3c4aa15e0943738f502b21f3d1a91f",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\animalCare\\animalCareDetail.js",
-    "destination": "06-zoo-database/code/js/adminDE/animalCare/animalCareDetail.js",
-    "source_sha256": "7675c13ca2ef81344e9e50c9050b97a052b4312d0d62505c2996f7646bd11d04",
-    "sha256": "7675c13ca2ef81344e9e50c9050b97a052b4312d0d62505c2996f7646bd11d04",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\animalCare\\insert2.js",
-    "destination": "06-zoo-database/code/js/adminDE/animalCare/insert2.js",
-    "source_sha256": "48a9fd50dc9893d9ce853da2de6b7967f20ec4cd2665e0bae606b0f0155b90d1",
-    "sha256": "48a9fd50dc9893d9ce853da2de6b7967f20ec4cd2665e0bae606b0f0155b90d1",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\animalCare\\insertAnimalCare.js",
-    "destination": "06-zoo-database/code/js/adminDE/animalCare/insertAnimalCare.js",
-    "source_sha256": "bcf01317b3eec5964cf0d799f5e1d38ffd9e5041e89010700b33d8e42f961a9c",
-    "sha256": "bcf01317b3eec5964cf0d799f5e1d38ffd9e5041e89010700b33d8e42f961a9c",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\category\\categoryDetail.js",
-    "destination": "06-zoo-database/code/js/adminDE/category/categoryDetail.js",
-    "source_sha256": "36d96f64cf1791f90905ddc82b7c60002a6ce19ff515e69b0a4395578b33d6b4",
-    "sha256": "36d96f64cf1791f90905ddc82b7c60002a6ce19ff515e69b0a4395578b33d6b4",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\employee\\employeeDetail.js",
-    "destination": "06-zoo-database/code/js/adminDE/employee/employeeDetail.js",
-    "source_sha256": "6d7bb63539c78a7a417b4447c09e6763c63effeb22d51aa5e5ed69d618bbab30",
-    "sha256": "6d7bb63539c78a7a417b4447c09e6763c63effeb22d51aa5e5ed69d618bbab30",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\employee\\insertEmployee.js",
-    "destination": "06-zoo-database/code/js/adminDE/employee/insertEmployee.js",
-    "source_sha256": "b9dd1c744dc794e23f3a17446dc126726a17f5f418f18854859f1abf552c8c37",
-    "sha256": "b9dd1c744dc794e23f3a17446dc126726a17f5f418f18854859f1abf552c8c37",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\employee\\viewEmployee.js",
-    "destination": "06-zoo-database/code/js/adminDE/employee/viewEmployee.js",
-    "source_sha256": "3905aa923dce196f067faa78dabdc68af377de856e5d62d8d18f5f69d171b8ea",
-    "sha256": "3905aa923dce196f067faa78dabdc68af377de856e5d62d8d18f5f69d171b8ea",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\visitor\\visitorDetail.js",
-    "destination": "06-zoo-database/code/js/adminDE/visitor/visitorDetail.js",
-    "source_sha256": "3227bcfeb47d337c4c09d6364df5d4e48ff725388bb3697930404a29d0236e37",
-    "sha256": "3227bcfeb47d337c4c09d6364df5d4e48ff725388bb3697930404a29d0236e37",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\zone\\insertZone.js",
-    "destination": "06-zoo-database/code/js/adminDE/zone/insertZone.js",
-    "source_sha256": "a65fbb074fee6a8d206c854ad2929c4e64ddf64f8f363f27d22674aec4cd75c3",
-    "sha256": "a65fbb074fee6a8d206c854ad2929c4e64ddf64f8f363f27d22674aec4cd75c3",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\zone\\viewZone.js",
-    "destination": "06-zoo-database/code/js/adminDE/zone/viewZone.js",
-    "source_sha256": "04b18586dcd04bef395b4ef2a1adc9a363508b0ee5719eb3673997f2fb82d8fc",
-    "sha256": "04b18586dcd04bef395b4ef2a1adc9a363508b0ee5719eb3673997f2fb82d8fc",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\js\\adminDE\\zone\\zoneDetail.js",
-    "destination": "06-zoo-database/code/js/adminDE/zone/zoneDetail.js",
-    "source_sha256": "2d0d62ce6c0a83005e56fea79a5d88e7d4dbc4ea3955da63866795bbeb500991",
-    "sha256": "2d0d62ce6c0a83005e56fea79a5d88e7d4dbc4ea3955da63866795bbeb500991",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\UserDE\\Amphibious.html",
-    "destination": "06-zoo-database/code/html/UserDE/Amphibious.html",
-    "source_sha256": "53f3ab01bb4dff2ec826b17993710b7000ceb11546d454234ea2b8cf267e05e6",
-    "sha256": "53f3ab01bb4dff2ec826b17993710b7000ceb11546d454234ea2b8cf267e05e6",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\UserDE\\AnimalDetail.html",
-    "destination": "06-zoo-database/code/html/UserDE/AnimalDetail.html",
-    "source_sha256": "c8b942e6886c5c0e0b4164cea907e3e1274ba959fe753ee78c8e523a84ab33d9",
-    "sha256": "c8b942e6886c5c0e0b4164cea907e3e1274ba959fe753ee78c8e523a84ab33d9",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\UserDE\\animallist.html",
-    "destination": "06-zoo-database/code/html/UserDE/animallist.html",
-    "source_sha256": "21a5203f4e8e36f89d9ac9f0f1b700d1d59cb5536241c7a4e96d2f8e78dba685",
-    "sha256": "21a5203f4e8e36f89d9ac9f0f1b700d1d59cb5536241c7a4e96d2f8e78dba685",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\UserDE\\BirdsZone.html",
-    "destination": "06-zoo-database/code/html/UserDE/BirdsZone.html",
-    "source_sha256": "21513557ac7f87f7102249bd4221850f5dd236a76953c552fce0e86b9a8fc549",
-    "sha256": "21513557ac7f87f7102249bd4221850f5dd236a76953c552fce0e86b9a8fc549",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\UserDE\\Profile.html",
-    "destination": "06-zoo-database/code/html/UserDE/Profile.html",
-    "source_sha256": "99d589ba4982fb6cb405662574a59c9abf6fbb5eb42ed7161aba604d92fe7497",
-    "sha256": "99d589ba4982fb6cb405662574a59c9abf6fbb5eb42ed7161aba604d92fe7497",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\UserDE\\WaterZone.html",
-    "destination": "06-zoo-database/code/html/UserDE/WaterZone.html",
-    "source_sha256": "8f9123ecf4110a5c986f013aed777fe4f2f216d23276ce5c4eac6da40c68be57",
-    "sha256": "8f9123ecf4110a5c986f013aed777fe4f2f216d23276ce5c4eac6da40c68be57",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\UserDE\\WildLife.html",
-    "destination": "06-zoo-database/code/html/UserDE/WildLife.html",
-    "source_sha256": "6ba32d189882fce8cd7f2608f348d41070783e1ce3763f8612e8629968c51ebb",
-    "sha256": "6ba32d189882fce8cd7f2608f348d41070783e1ce3763f8612e8629968c51ebb",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\animal\\animalsDetails.html",
-    "destination": "06-zoo-database/code/html/adminDE/animal/animalsDetails.html",
-    "source_sha256": "5b6279d53c4cf643ab5fac1fec1127fdce5ac403d25c052c6afa6f3fef5e743a",
-    "sha256": "5b6279d53c4cf643ab5fac1fec1127fdce5ac403d25c052c6afa6f3fef5e743a",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\animal\\insertAnimal.html",
-    "destination": "06-zoo-database/code/html/adminDE/animal/insertAnimal.html",
-    "source_sha256": "289847410c609b497765b643c490c1e181b89b310cd27b79bcb64c1fcf5ad369",
-    "sha256": "289847410c609b497765b643c490c1e181b89b310cd27b79bcb64c1fcf5ad369",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\animal\\viewData.html",
-    "destination": "06-zoo-database/code/html/adminDE/animal/viewData.html",
-    "source_sha256": "24a3f5adf8faf5349fa77d7c54d12d2d0308ecfff283c2f94b14a2947b4ae031",
-    "sha256": "24a3f5adf8faf5349fa77d7c54d12d2d0308ecfff283c2f94b14a2947b4ae031",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\animalCare\\animalCareDetail.html",
-    "destination": "06-zoo-database/code/html/adminDE/animalCare/animalCareDetail.html",
-    "source_sha256": "3b52c7e2f89b9e2ae5b863afb7699bd8ed4c19339099b01ed7314032f4e97ab3",
-    "sha256": "3b52c7e2f89b9e2ae5b863afb7699bd8ed4c19339099b01ed7314032f4e97ab3",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\animalCare\\insert2.html",
-    "destination": "06-zoo-database/code/html/adminDE/animalCare/insert2.html",
-    "source_sha256": "a40d0b07d24f48fe94e75ce5170765fa862f43020b424a3f073aa48bc342dda3",
-    "sha256": "a40d0b07d24f48fe94e75ce5170765fa862f43020b424a3f073aa48bc342dda3",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\animalCare\\insertAnimalCare.html",
-    "destination": "06-zoo-database/code/html/adminDE/animalCare/insertAnimalCare.html",
-    "source_sha256": "41bc9825e1c2bb18f494823c13dbc9e2cd0788dc15a9af2cac177f979bef1d31",
-    "sha256": "41bc9825e1c2bb18f494823c13dbc9e2cd0788dc15a9af2cac177f979bef1d31",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\category\\categoryDetail.html",
-    "destination": "06-zoo-database/code/html/adminDE/category/categoryDetail.html",
-    "source_sha256": "2f80c0caded809fee586fc98cfe114a445886f357196381f07a22f5d69dd8165",
-    "sha256": "2f80c0caded809fee586fc98cfe114a445886f357196381f07a22f5d69dd8165",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\employee\\employeeDetail.html",
-    "destination": "06-zoo-database/code/html/adminDE/employee/employeeDetail.html",
-    "source_sha256": "696ad057f883ef3247a8a9dab84ac53cabc8c97e0d5e6d43a7c7c708edae25d9",
-    "sha256": "696ad057f883ef3247a8a9dab84ac53cabc8c97e0d5e6d43a7c7c708edae25d9",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\employee\\insertEmployee.html",
-    "destination": "06-zoo-database/code/html/adminDE/employee/insertEmployee.html",
-    "source_sha256": "20b8e761801f30e9d154750367285366a05bbcb415d104174e1753bbc48d471f",
-    "sha256": "20b8e761801f30e9d154750367285366a05bbcb415d104174e1753bbc48d471f",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\employee\\viewEmployee.html",
-    "destination": "06-zoo-database/code/html/adminDE/employee/viewEmployee.html",
-    "source_sha256": "fc52aa262651e594c1e2069a1817a24c79cb584c95b98553e836947570de62ae",
-    "sha256": "fc52aa262651e594c1e2069a1817a24c79cb584c95b98553e836947570de62ae",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\visitor\\visitorDetail.html",
-    "destination": "06-zoo-database/code/html/adminDE/visitor/visitorDetail.html",
-    "source_sha256": "b6823578f70ee7b53452a7beaae37074f129462da438c73937ce529d824fff6f",
-    "sha256": "b6823578f70ee7b53452a7beaae37074f129462da438c73937ce529d824fff6f",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\zone\\insertZone.html",
-    "destination": "06-zoo-database/code/html/adminDE/zone/insertZone.html",
-    "source_sha256": "dc93566c73f40d4aa270f6a9ced7a01cadc9a6e8ba204da5266388d82a6570e9",
-    "sha256": "dc93566c73f40d4aa270f6a9ced7a01cadc9a6e8ba204da5266388d82a6570e9",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\zone\\viewZone.html",
-    "destination": "06-zoo-database/code/html/adminDE/zone/viewZone.html",
-    "source_sha256": "ed0c0fdd1bb2d4645a15c93283e0c7fb0bdc0f99edf137ebb5a691fd7389366c",
-    "sha256": "ed0c0fdd1bb2d4645a15c93283e0c7fb0bdc0f99edf137ebb5a691fd7389366c",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\html\\adminDE\\zone\\zoneDetail.html",
-    "destination": "06-zoo-database/code/html/adminDE/zone/zoneDetail.html",
-    "source_sha256": "502255e512a744065263f618d756a28812a8058ddcc547a46ac5e87335b6af96",
-    "sha256": "502255e512a744065263f618d756a28812a8058ddcc547a46ac5e87335b6af96",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\UserDE\\Amphibious.css",
-    "destination": "06-zoo-database/code/css/UserDE/Amphibious.css",
-    "source_sha256": "3d98460886ae03360d96b3ee199edaf1c7a8309106e16dd2ea8ec1bb4597f1fc",
-    "sha256": "3d98460886ae03360d96b3ee199edaf1c7a8309106e16dd2ea8ec1bb4597f1fc",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\UserDE\\AnimalDetail.css",
-    "destination": "06-zoo-database/code/css/UserDE/AnimalDetail.css",
-    "source_sha256": "a6523d0f48733a7da4fdd36da2290522aaa139f0bdf0d7a9254d535a5ffe2ed3",
-    "sha256": "a6523d0f48733a7da4fdd36da2290522aaa139f0bdf0d7a9254d535a5ffe2ed3",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\UserDE\\animallist.css",
-    "destination": "06-zoo-database/code/css/UserDE/animallist.css",
-    "source_sha256": "e6495cce05c1ff99f8dca6b49ab3eeef7efb28f84853c3c49cebe6ec7991a754",
-    "sha256": "e6495cce05c1ff99f8dca6b49ab3eeef7efb28f84853c3c49cebe6ec7991a754",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\UserDE\\BirdsZone.css",
-    "destination": "06-zoo-database/code/css/UserDE/BirdsZone.css",
-    "source_sha256": "aa21d349b31a42bd72f1376279395bf468a40c0bda97dd7b340199324b21433a",
-    "sha256": "aa21d349b31a42bd72f1376279395bf468a40c0bda97dd7b340199324b21433a",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\UserDE\\Profile.css",
-    "destination": "06-zoo-database/code/css/UserDE/Profile.css",
-    "source_sha256": "961488abb4141ec207ebedd35faba33b572956c0ba4aedaa108f85e37fb2180d",
-    "sha256": "961488abb4141ec207ebedd35faba33b572956c0ba4aedaa108f85e37fb2180d",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\UserDE\\WaterZone.css",
-    "destination": "06-zoo-database/code/css/UserDE/WaterZone.css",
-    "source_sha256": "4dcee6e203562bd5a334afc27f9d586e8a478723b22409992e80a0591c24c2f3",
-    "sha256": "4dcee6e203562bd5a334afc27f9d586e8a478723b22409992e80a0591c24c2f3",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\UserDE\\WildLife.css",
-    "destination": "06-zoo-database/code/css/UserDE/WildLife.css",
-    "source_sha256": "a80cf8ae7d05e8c328c3ed82d8f7335921a0897588adb5c22024f01febc5e862",
-    "sha256": "a80cf8ae7d05e8c328c3ed82d8f7335921a0897588adb5c22024f01febc5e862",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\animal\\animalsDetails.css",
-    "destination": "06-zoo-database/code/css/adminDE/animal/animalsDetails.css",
-    "source_sha256": "1db0d5c88c92239632ebed28924c553a33e679401153c6d34a90168b05bd2a39",
-    "sha256": "1db0d5c88c92239632ebed28924c553a33e679401153c6d34a90168b05bd2a39",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\animal\\insertAnimal.css",
-    "destination": "06-zoo-database/code/css/adminDE/animal/insertAnimal.css",
-    "source_sha256": "21e9647d9adf72cc709a072e7cce60302083c442518d2e9057eb00153b15609b",
-    "sha256": "21e9647d9adf72cc709a072e7cce60302083c442518d2e9057eb00153b15609b",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\animal\\viewData.css",
-    "destination": "06-zoo-database/code/css/adminDE/animal/viewData.css",
-    "source_sha256": "017d542e645380a1e0f0b0a5b3d5a5f04a23ee60d91b1e3f66691625f8ac2deb",
-    "sha256": "017d542e645380a1e0f0b0a5b3d5a5f04a23ee60d91b1e3f66691625f8ac2deb",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\animalCare\\animalCareDetail.css",
-    "destination": "06-zoo-database/code/css/adminDE/animalCare/animalCareDetail.css",
-    "source_sha256": "02445e46aab1e6cff0e325698e62eaefeb6bf64ca2c7953a51fb82c565494b7a",
-    "sha256": "02445e46aab1e6cff0e325698e62eaefeb6bf64ca2c7953a51fb82c565494b7a",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\animalCare\\insert2.css",
-    "destination": "06-zoo-database/code/css/adminDE/animalCare/insert2.css",
-    "source_sha256": "84e86486f4807788d0f3b5a62b3f37478d01ff9e2b2855a90d27a8e509240180",
-    "sha256": "84e86486f4807788d0f3b5a62b3f37478d01ff9e2b2855a90d27a8e509240180",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\animalCare\\insertAnimalCare.css",
-    "destination": "06-zoo-database/code/css/adminDE/animalCare/insertAnimalCare.css",
-    "source_sha256": "e20d45f539663b3668351574a5fa74a8b3f6bf04bdce99fd92505e17cb8651e2",
-    "sha256": "e20d45f539663b3668351574a5fa74a8b3f6bf04bdce99fd92505e17cb8651e2",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\category\\categoryDetail.css",
-    "destination": "06-zoo-database/code/css/adminDE/category/categoryDetail.css",
-    "source_sha256": "db263f5e7ef1dad20dd44b58d6ebe797b81600b2acb5678f05279d50cdb56402",
-    "sha256": "db263f5e7ef1dad20dd44b58d6ebe797b81600b2acb5678f05279d50cdb56402",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\employee\\employeeDetail.css",
-    "destination": "06-zoo-database/code/css/adminDE/employee/employeeDetail.css",
-    "source_sha256": "0369a34b7c1a79c600e6d59e29db8d049d4f8a47ef59d91f2d66d7c99018ef99",
-    "sha256": "0369a34b7c1a79c600e6d59e29db8d049d4f8a47ef59d91f2d66d7c99018ef99",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\employee\\insertEmployee.css",
-    "destination": "06-zoo-database/code/css/adminDE/employee/insertEmployee.css",
-    "source_sha256": "c002080aeeaeeb423864d84626db484575dece2c0c1caad4a9fdd5c82f714c3c",
-    "sha256": "c002080aeeaeeb423864d84626db484575dece2c0c1caad4a9fdd5c82f714c3c",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\employee\\viewEmployee.css",
-    "destination": "06-zoo-database/code/css/adminDE/employee/viewEmployee.css",
-    "source_sha256": "2f06364d4760c6e361b317698994671d547e04a8ba49a1f5cce48634de8228f9",
-    "sha256": "2f06364d4760c6e361b317698994671d547e04a8ba49a1f5cce48634de8228f9",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\visitor\\visitorDetail.css",
-    "destination": "06-zoo-database/code/css/adminDE/visitor/visitorDetail.css",
-    "source_sha256": "96a4cfd3a3023912b29a67c33ec8bfd2742b7234af2ceddf7e2af13657e5e801",
-    "sha256": "96a4cfd3a3023912b29a67c33ec8bfd2742b7234af2ceddf7e2af13657e5e801",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\zone\\insertZone.css",
-    "destination": "06-zoo-database/code/css/adminDE/zone/insertZone.css",
-    "source_sha256": "30d8f068df9e39c9bcdfa8f0f714b796c6613858f1897a4a8ebaf2577f2598f1",
-    "sha256": "30d8f068df9e39c9bcdfa8f0f714b796c6613858f1897a4a8ebaf2577f2598f1",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\zone\\viewZone.css",
-    "destination": "06-zoo-database/code/css/adminDE/zone/viewZone.css",
-    "source_sha256": "ca918b6ee49a4833c4a7e6b046f5c9c63f26b78918baff5dd6b2c203273e6fe5",
-    "sha256": "ca918b6ee49a4833c4a7e6b046f5c9c63f26b78918baff5dd6b2c203273e6fe5",
-    "modified": false
-  },
-  {
-    "source": "Database\\MiniProject\\Project\\DatabaseProject\\code\\css\\adminDE\\zone\\zoneDetail.css",
-    "destination": "06-zoo-database/code/css/adminDE/zone/zoneDetail.css",
-    "source_sha256": "0fc158a01e821fd74cd473bd2bfcb380e4bb0e195e2a5fc44c8093661f3e42fe",
-    "sha256": "0fc158a01e821fd74cd473bd2bfcb380e4bb0e195e2a5fc44c8093661f3e42fe",
     "modified": false
   }
 ]

@@ -1,39 +1,23 @@
-# Student Projects Portfolio
+# Digital Logic Lab — Decimal Adder
 
-คัดจากคลังงานระหว่างเรียน เพื่อแสดงทักษะที่เคยฝึกผ่าน mini project และ lab ที่มีโค้ดหรือวงจรจริง
-เอกสารนี้จัดทำใหม่เพื่ออธิบายงานเดิม ไม่ใช่หลักฐานว่าโปรเจกต์ทั้งหมดผ่านการทดสอบใหม่
+มินิโปรเจกต์วงจรบวกฐานสิบที่ผู้จัดทำระบุว่าออกแบบเองระหว่างเรียน Digital Logic
+เก็บวงจรต้นฉบับแบบ Block Diagram รวมทั้งวงจรย่อยและ waveform
 
-| รายวิชา / ทักษะ | งานที่เลือก | เปิดดู |
-|---|---|---|
-| Digital Logic / Quartus II | **Decimal Adder** วงจรบวกฐานสิบพร้อมวงจรย่อย | [วงจรและวิธีเปิด](01-decimal-adder/README.md) |
-| Microcontroller / MicroPython | พัดลมควบคุมเวลา อุณหภูมิ ความเร็ว และทิศทาง | [โค้ดและการต่อขา](02-fan-controller/README.md) |
-| IoT / ESP8266 | วัดความชื้นดิน ส่ง Blynk และควบคุม relay | [โปรเจกต์](03-soil-moisture/README.md) |
-| OOP / Java Swing | Store, Bank, Cafe และอ่านเขียนไฟล์ | [4 labs](04-java-oop/README.md) |
-| Data Structures / C++ | กราฟ ลิสต์ สแตก ต้นไม้ และ sorting | [labs](05-data-structures/README.md) |
-| Database / Web | ระบบสวนสัตว์ — งานกลุ่ม | [source และ schema](06-zoo-database/README.md) |
+![วงจรหลักจากไฟล์ BDF](preview.svg)
 
-## Featured: Decimal Adder
+## เปิดงานจริง
 
-![วงจรบวกฐานสิบ](01-decimal-adder/preview.svg)
+1. เปิด Quartus II ที่รองรับ FLEX10K (ต้นฉบับใช้ **9.0 Web Edition**)
+2. เปิด `miniProjectAdder.qpf` แล้วเปิด `miniProjectAdder.bdf`
+3. ดับเบิลคลิกบล็อกเพื่อดู `12bit`, `LHHL`, `TestProSelect`, `Multiplex`, `16mux4`, `Count4`, `Decode2to4`
+4. เปิด `miniProjectAdder.vwf` เพื่อดูอินพุตการจำลองเดิม ก่อนสั่ง compile/simulation
 
-เริ่มดูจากงานนี้: มีไฟล์ .qpf/.qsf/.bdf/.bsf/.vwf และรายงานต้นฉบับระบุ compile สำเร็จเมื่อ 18 ต.ค. 2024
-ภาพข้างต้นแปลงจาก BDF เพื่อให้อ่านบน GitHub ได้; เปิด QPF ใน Quartus เพื่อดู/แก้ไขวงจรจริง
+อุปกรณ์ใน QSF: `EPF10K10LC84-4` มี pin assignment เดิมครบ
+ลบเฉพาะ MISC_FILE ที่ชี้ไปไดรฟ์เครื่องเก่าออกจากสำเนา QSF
 
-## การคัดเลือกและเครดิต
+รายงานต้นฉบับ `miniProjectAdder.flow.rpt` ระบุ Successful เมื่อ 18 ตุลาคม 2024
+นี่เป็นหลักฐานผลเดิม ไม่ใช่ผล compile ใหม่ ปัจจุบันยังไม่ได้จำลองความถูกต้องครบทุกค่าหรือทดสอบบนบอร์ด
+ภาพ SVG สร้างจากตำแหน่งและข้อความใน BDF เพื่อเปิดดูบน GitHub ไม่ใช่ screenshot จาก Quartus และไม่ใช่ simulator
 
-- เก็บผลงานที่มี implementation และคำอธิบายสิ่งที่เรียน ไม่รวมสไลด์ หนังสือ คู่มือโจทย์ และโปรแกรมติดตั้ง
-- คงเครดิตงานกลุ่มใน source; ไฟล์ที่ไม่ยืนยันผู้เขียนไม่อ้างว่าเป็นงานเดี่ยวทั้งหมด
-- ไม่รวมไฟล์ build, cache, dependencies, ข้อมูลบัญชีหรือ database rows เดิม
-- source ต้นฉบับไม่ถูกแก้ไข ดูที่มาและ SHA-256 ของไฟล์คัดลอกใน [manifest](provenance.json)
-- ยังไม่กำหนด license ครอบทั้งคลัง เพราะมีงานกลุ่มและข้อความสิทธิ์ของเครื่องมือเดิม
-- ดู [ผลตรวจ](VALIDATION.md) และ [รายการคัดออก](SELECTION.md)
 
-## ลง Git
-
-Repository: https://github.com/Painter121/student-projects-portfolio
-
-```sh
-git clone https://github.com/Painter121/student-projects-portfolio.git
-```
-
-เลือกหมวดงานจากตารางด้านบนเพื่อดู source และวิธีเปิดของแต่ละโปรเจกต์
+Repository แยกตามวิชา/หัวข้องานเรียน คงโค้ดและเครดิตเดิมไว้ ดูที่มาไฟล์ใน [provenance.json](provenance.json)

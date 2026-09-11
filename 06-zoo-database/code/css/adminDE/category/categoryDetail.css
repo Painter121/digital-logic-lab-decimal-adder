@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f5f5;
+}
+.container{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+}
+
+.container .categoryDetails {
+    /* border: 1px solid rgb(56, 24, 216); */
+    padding: 20px;
+    height: auto;
+}
+
+.container .categoryDetails .box table {
+    border: none; 
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เงาตาราง */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container .categoryDetails .box table th {
+    background-color: #201f1f; 
+    color: white; 
+    font-weight: bold; 
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid #ddd; 
+    max-width: 150px; 
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+.container .categoryDetails .box table td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: #333; 
+    border-bottom: 1px solid #ddd; 
+    max-width: 150px; 
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+.container .categoryDetails .box table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.title {
+    border: 1px solid #000000; /* สีเขียวสดใส */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #201f1f, #201f1f); /* ไล่สีจากเขียวเข้มไปเขียวอ่อน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาให้ดูมีมิติ */
+    border-radius: 10px; /* มุมโค้งให้ดูเรียบ */
+}
+
+.title h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    color: #ffffff; /* ข้อความสีขาว */
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+.searchBar {
+    border: 1px solid rgb(0, 0, 0); /* สีเขียวเข้ม */
+    flex: 2;
+    display: flex;
+    padding: 8px 15px;
+    align-items: center;
+    border-radius: 30px; /* เพิ่มมุมโค้งให้สวยงาม */
+    background-color: #ffffff; /* พื้นหลังขาว */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+    transition: all 0.3s ease; /* เอฟเฟกต์เวลา hover */
+}
+
+.searchBar:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* เพิ่มเงาเมื่อ hover */
+}
+
+.searchBar i {
+    margin-right: 12px;
+    color: #201f1f; /* สีเขียวเข้ม */
+    font-size: 20px; /* ขนาดไอคอน */
+}
+
+.searchBar input {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    color: #201f1f; /* สีเขียวเข้ม */
+    font-family: 'Arial', sans-serif;
+}
+
+.searchBar input::placeholder {
+    color: #6b6b6b; /* สีเขียวอ่อนสำหรับ placeholder */
+    font-style: italic;
+}
+
+.searchBar input:focus {
+    border: 2px solid rgb(0, 0, 0); /* เปลี่ยนสีเมื่อ focus */
+    box-shadow: 0 0 5px #201f1f; /* เงาเบาๆ เมื่อ focus */
+}

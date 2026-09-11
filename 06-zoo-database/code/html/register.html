@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+    <link rel="icon" type="image/x-icon" href="pic\panda.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <a href="Home.html"><i class="fa-solid fa-hippo"></i></a>
+            </div>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="UserDE/animallist.html">Animals</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="profile">
+            <h1>Register</h1>
+            <form action="">
+                <div class="box1">
+                    <div class="box1-1">
+                        <label for="firstname">Firstname </label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+                    <div class="box1-1">
+                        <label for="lastname">Lastname </label>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username">
+
+                    </div>
+                </div>
+                <div>
+                    <div class="input-group">
+                        <label for="password">password</label>
+                        <input type="password" name="password" id="password">
+                        <span class="toggle-password" onclick="togglePassword('password', 'togglePasswordIcon')">
+                            <i id="togglePasswordIcon" class="fas fa-eye"></i>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="input-group">
+                        <label for="">ConfirmPassword</label>
+                        <input type="password" name="CFpassword" id="CFpassword">
+                        <span class="toggle-password" onclick="togglePassword('CFpassword', 'toggleCFPasswordIcon')">
+                            <i id="toggleCFPasswordIcon" class="fas fa-eye"></i>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="">EmailAddress</label>
+                        <input type="text" name="email"  disabled>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="box1-1">
+                        <label for="DateOfBirth">DateOfBirth</label>
+                        <input type="date" name="DateOfBirth" id="DateOfBirth">
+                    </div>
+                    <div class="box1-1">
+                        <label for="">Gender</label>
+                        <div class="gender">
+                            <input type="radio" id="male" name="gender" value="Male"> <label for="male" style="cursor: pointer;">Male</label>
+                            <input type="radio" id="female" name="gender" value="Female"> <label for="female" style="cursor: pointer;">Female</label>
+                            <input type="radio" id="other" name="gender" value="other"> <label for="other" style="cursor: pointer;">other</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="BT">
+                    <button onclick="submitData()">Register</button>
+                    <a href="Login.html">Back</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

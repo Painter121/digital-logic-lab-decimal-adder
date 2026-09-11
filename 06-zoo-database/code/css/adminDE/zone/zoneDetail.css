@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f5f5;
+}
+.container{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+}
+
+.container .zoneDetails {
+    /* border: 1px solid rgb(56, 24, 216); */
+    padding: 20px;
+    height: auto;
+}
+
+.container .zoneDetails .box table {
+    border: none; 
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เงาตาราง */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container .zoneDetails .box table th {
+    background-color: #201f1f; 
+    color: white; 
+    font-weight: bold; 
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid #ddd; 
+    max-width: 150px; 
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+.container .zoneDetails .box table td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: #333; 
+    border-bottom: 1px solid #ddd; 
+    max-width: 150px; 
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+.container .zoneDetails .box table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* fixe Button */
+.fixed-button {
+    display: flex;
+    position: fixed;
+    bottom: 50px;
+    right: 10px; 
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: black;
+    border-radius: 50%;
+}
+.sign {
+    width: 100%;
+    font-size: 2em;
+    color: white;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition-duration: .3s;
+}
+.fixed-button:hover {
+    width: 125px;
+    border-radius: 0px;
+    transition-duration: .3s;
+    border-radius: 10px;
+}
+
+.fixed-button:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+}
+.fixed-button:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 20px;
+}
+.fixed-button:active {
+    transform: translate(2px ,2px);
+}
+
+
+
+.title {
+    border: 1px solid rgb(0, 0, 0); /* สีเขียวสดใส */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #201f1f, #201f1f); /* ไล่สีจากเขียวเข้มไปเขียวอ่อน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาให้ดูมีมิติ */
+    border-radius: 10px; /* มุมโค้งให้ดูเรียบ */
+}
+
+.title h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    color: #ffffff; /* ข้อความสีขาว */
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+.searchBar {
+    border: 1px solid #000000; /* สีเขียวเข้ม */
+    flex: 2;
+    display: flex;
+    padding: 8px 15px;
+    align-items: center;
+    border-radius: 30px; /* เพิ่มมุมโค้งให้สวยงาม */
+    background-color: #ffffff; /* พื้นหลังขาว */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+    transition: all 0.3s ease; /* เอฟเฟกต์เวลา hover */
+}
+
+.searchBar:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* เพิ่มเงาเมื่อ hover */
+}
+
+.searchBar i {
+    margin-right: 12px;
+    color: #201f1f; /* สีเขียวเข้ม */
+    font-size: 20px; /* ขนาดไอคอน */
+}
+
+.searchBar input {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    color: #000000; /* สีเขียวเข้ม */
+    font-family: 'Arial', sans-serif;
+}
+
+.searchBar input::placeholder {
+    color: rgb(67, 66, 66); /* สีเขียวอ่อนสำหรับ placeholder */
+    font-style: italic;
+}
+
+.searchBar input:focus {
+    border: 2px solid rgb(79, 78, 78); /* เปลี่ยนสีเมื่อ focus */
+    box-shadow: 0 0 5px #393939; /* เงาเบาๆ เมื่อ focus */
+}
+
+/* tooltip */
+.custom-tooltip {
+    position: fixed;
+    background-color: #1e1d1d;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    z-index: 1000;
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateX(-50%);
+}
+.custom-tooltip::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent;
+    
+}
+
+.viewButton:hover i {
+    color: rgb(238, 216, 19);
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.highlight-red {
+    background-color: rgb(222, 66, 66);
+    color: white;
+}
+
+.highlight-red:hover {
+    background-color: rgb(227, 14, 14) !important; /* คงสีเดิม */
+    color: white !important; /* คงสีตัวอักษร */
+}
+
+.overlay {
+    display: none; /* ซ่อน overlay เมื่อไม่ได้ใช้ */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* เบลอพื้นหลัง */
+    z-index: 1000; /* ให้ overlay อยู่ด้านบน */
+    pointer-events: all; /* บล็อกการคลิกทั้งหมด */
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    z-index: 1001;
+}
+
+#Notification{
+    font-size: 25px;
+    color: rgb(219, 43, 43);
+    margin-bottom: 10px;
+}
+
+.notification button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    pointer-events: auto; /* ให้ปุ่มคลิกได้ */
+}
+
+.notification button:hover {
+    background-color: #45a049;
+}
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination button {
+    background-color: #201f1f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.pagination button:hover {
+    background-color: #201f1f;
+    transform: scale(1.05);
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 5px;
+}
+
+.page-number {
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.page-number:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+}
+
+.page-number.active {
+    background-color: #201f1f;
+    color: white;
+}
+
+.dots {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+}

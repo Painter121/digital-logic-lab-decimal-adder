@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="../../../css/adminDE/visitor/visitorDetail.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="VisitorDetails">
+            <div class="box">
+                <div class="title">
+
+                    <h1><i class="fa-solid fa-address-card"></i> Visitor List</h1>
+
+                    <div class="searchBar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="resultCount" style="margin-right: 10px; font-size: 20px; color: #248132;"></div>
+                        <input type="search" placeholder="Search by UserID, Name, Username, Email, Role">
+                    </div>
+
+
+                </div>
+                <table id="VisitorDetailsTable">
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>DateOfBirth</th>
+                            <th>Gender</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- data -->
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <button id="prevPage" disabled>Previous</button>
+                    <div id="pageNumbers" class="page-numbers"></div>
+                    <button id="nextPage">Next</button>
+                </div>
+            </div>
+        </div>
+        <!-- Role Edit Modal -->
+        <div id="roleModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeRoleModal()">&times;</span>
+                <div class="RoleBox">
+                    <h2 class="modal-title">Edit User Role</h2>
+                    <input type="hidden" id="modalUserId">
+                    <label for="modalRole">Select Role</label>
+                    <select id="modalRole">
+                        <option value="User">User</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                    <button onclick="saveRoleChange()" class="save-btn">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Confirm Role Change Modal -->
+        <div id="confirmModal" class="modal">
+            <div class="modal-content">
+                <h2 class="modal-title">Confirm Role Change</h2>
+                <p id="confirmMessage" class="modal-message"></p>
+                <input type="hidden" id="confirmUserId">
+                <input type="hidden" id="confirmNewRole">
+                <div class="modal-buttons">
+                    <button onclick="confirmRoleChange()" class="confirm-btn">Confirm</button>
+                    <button onclick="closeConfirmModal()" class="cancel-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../../../js/adminDE/visitor/visitorDetail.js" defer></script>
+
+</html>

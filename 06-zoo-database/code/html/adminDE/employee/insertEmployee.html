@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Management</title>
+    <link rel="stylesheet" href="../../../css/adminDE/employee/insertEmployee.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Insert Employee Information</h2>
+        <form id="insertEmployeeForm">
+            <div class="box2">
+                <div class="form-group-1">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group-2">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="form-group-1">
+                    <label for="position">Position:</label>
+                    <input type="text" id="position" name="position" required>
+                </div>
+                <div class="form-group-2">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth"required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            <div class="box2">
+                <div class="form-group-1">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group-2">
+                    <label for="nationality">Nationality:</label>
+                    <input type="text" id="nationality" name="nationality"  required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="zoneID">ZoneName</label>
+                <input type="text" id="zoneID" name="zoneID" readonly required disabled>
+                <button type="button" id="selectZoneBtn">Select Zone</button>
+            </div>
+            <!-- Modal for Zone Selection -->
+            <div id="zoneModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Select Zone</h3>
+                    <div id="zoneList" class="zone-list"></div>
+                </div>
+            </div>
+            
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+
+    
+</body>
+<script src="../../../js/adminDE/employee/insertEmployee.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

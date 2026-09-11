@@ -1,0 +1,239 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #ffffff; */
+}
+
+* a{
+    text-decoration: none;
+}
+* li{
+    list-style: none;
+}
+
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+.container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background-image: url(https://onetreeplanted.org/cdn/shop/articles/Forest_Fog_1600x.jpg?v=1682535224);
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+}
+
+
+
+.logo a{
+    font-size: 2.2rem;
+    color: #ffffff;
+    /* border: 1px solid rgb(10, 200, 207); */
+    transition: 500ms;
+}
+.logo a:hover{
+    font-size: 3rem;
+    color: #ffffff;
+    /* border: 1px solid rgb(10, 200, 207); */
+    transition: 200ms;
+}
+
+    .menu {
+        /* border-bottom: 2px solid #338037; */
+        /* background-color: #388e3c; */
+        position: relative;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 10vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .menu ul{
+        /* border: 1px solid rgb(131, 10, 94); */
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+    .menu ul li{
+        /* border: 1px solid rgb(36, 182, 109);    */
+        margin-right: 15%;
+    }
+    .menu ul li a{
+        color: #ffffff;
+        font-size: 20px;
+        transition: 500ms;
+    }
+    .menu ul li a:hover{
+        color: #ffffff;
+        font-size: 25px;
+        transition: 200ms;
+    }
+
+    .content{
+        width: 65%;
+        height: 80vh;
+        /* border: 1px solid red; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5vh;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 30px;
+        backdrop-filter: blur(40);
+        background-color: #296c2c;
+    }
+    .pic{
+        /* border: 1px solid rgb(16, 109, 5); */
+        width: 50%;
+        height: 100%;
+        background-image: url("https://images.alphacoders.com/109/thumb-1920-1094371.jpg");
+        background-size: cover;
+        background-position: left;
+        border-radius: 30px 0px 0px 30px;
+    }
+    .register{
+        border: 1px solid red;
+        border-radius: 0px 30px 30px 0px;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column  ;
+        padding: 20px;
+        background-color: #ffffff;
+    }
+    .register h1{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #338037;
+    }
+
+
+.profile{
+    /* border: 1px solid red; */
+    background-color: #ffffff;
+    width: 33%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile form{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.profile form div{
+    /* border: 1px solid rgb(7, 28, 165); */
+    margin:10px;
+    /* width: 100%; */
+}
+.profile .box1{
+    /* border: 1px solid rgb(236, 29, 226); */
+    display: flex;
+}
+.profile .box1 .box1-1{
+    /* border: 1px solid rgb(8, 132, 120); */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+input[type = "text"],[type = "date"]{
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+}
+input[type = "password"]{
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.profile .box1 .box1-1 .gender{
+    /* border: 1px solid rgb(209, 18, 44); */
+    display: flex;
+    width: 100%;
+}
+.profile .box1 .box1-1 .gender input[type = "radio"]{
+    display: flex;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.BT{
+    /* border: 1px solid rgb(7, 208, 71); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.BT button{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.BT a{
+    color: black;
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+
+/* togglePass */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 65%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+}
+
+.toggle-password:hover {
+    color: #333;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #218838;
+}

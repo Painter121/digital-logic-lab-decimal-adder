@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/UserDE/Profile.css">
+    <link rel="stylesheet" href="../../css/tool.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <script src="../../js/tool.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <a href="../Home.html"><i class="fa-solid fa-hippo"></i></a>
+            </div>
+            <ul>
+                <li><a href="../Home.html">Home</a></li>
+                <li><a href="../UserDE/animallist.html">Animals</a></li>
+                <li><a href="../About.html">About</a></li>
+                <li><a href="../Contact.html">Contact</a></li>
+                <li><a href="../Home.html" id="logout-link">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile-header">User Profile</div>
+            <div id="profile" class="profile-info">
+
+            </div>
+
+            <div class="modal" id="editModal">
+                <div class="modal-content">
+                    <h2 id="modalTitle">Edit Info</h2>
+
+                    <div id="nameFields" class="input-group">
+                        <input type="text" id="firstnameInput" placeholder="First Name">
+                        <input type="text" id="lastnameInput" placeholder="Last Name">
+                    </div>
+
+                    <input type="email" id="modalEmail" class="input-group" placeholder="Email">
+                    <input type="date" id="modalDate" class="input-group">
+                    <select id="modalDropdown" class="input-group">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <button style="margin-right: 20px;" onclick="saveChanges()">Save</button>
+                    <button id="closeButton">Close</button>
+                </div>
+            </div>
+
+            <!-- Change Password Link -->
+            <div class="profile-item">
+                <div class="box4">
+                    <a href="#" onclick="openCurrentPasswordModal()">เปลี่ยนรหัสผ่าน</a>
+                </div>
+            </div>
+            <!-- Modal for Current Password -->
+            <div id="currentPasswordModal" class="modal">
+                <div class="modal-content">
+                    <h2>ยืนยันรหัสผ่านปัจจุบัน</h2>
+                   
+                    
+                    <div class="boxpass">
+                        <input type="password" id="currentPassword" placeholder="รหัสผ่านปัจจุบัน">
+                        <button onclick="togglePasswordVisibility('currentPassword')" class="bt-eye"><i id="togglePasswordIcon" class="fas fa-eye"></i></button>
+                        
+                    </div>
+                    <button onclick="verifyCurrentPassword()">ยืนยัน</button>
+                    <button onclick="closeModal2('currentPasswordModal')">ยกเลิก</button>
+                </div>
+            </div>
+
+            <!-- Modal for New Password -->
+            <div id="newPasswordModal" class="modal">
+                <div class="modal-content">
+                    <h2>เปลี่ยนรหัสผ่านใหม่</h2>
+                    <div class="boxpass">
+                        <input type="password" id="newPassword" placeholder="รหัสผ่านใหม่">
+                        <button onclick="togglePasswordVisibility('newPassword')" class="bt-eye"><i id="togglePasswordIcon" class="fas fa-eye"></i></button>
+                    </div>
+                    
+
+                    <div class="boxpass">
+                        <input type="password" id="confirmPassword" placeholder="ยืนยันรหัสผ่านใหม่">
+                        <button onclick="togglePasswordVisibility('confirmPassword')" class="bt-eye"><i id="togglePasswordIcon" class="fas fa-eye"></i></button>
+                    </div>
+
+                    <button onclick="changePassword()">บันทึก</button>
+                    <button onclick="closeModal2('newPasswordModal')">ยกเลิก</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <nav class="admin-menu" id="Admin-menu" style="display: none;">
+            <input type="checkbox" href="#" class="admin-menu-open" name="admin-menu-open" id="admin-menu-open">
+            <label class="admin-menu-open-button" for="admin-menu-open">
+                <span class="admin-lines admin-line-1"></span>
+                <span class="admin-lines admin-line-2"></span>
+                <span class="admin-lines admin-line-3"></span>
+            </label>
+            <a href="../admin.html?page=category" class="admin-menu-item blue"> <i class="fa-solid fa-icons"></i></a>
+            <a href="../admin.html?page=animalCare" class="admin-menu-item green"> <i
+                    class="fa-solid fa-hands-holding"></i></a>
+            <a href="../admin.html?page=animals" class="admin-menu-item red"><i class="fa-solid fa-crow"></i> </a>
+            <a href="../admin.html?page=employee" class="admin-menu-item purple"><i
+                    class="fa-solid fa-address-card"></i></a>
+            <a href="../admin.html?page=zone" class="admin-menu-item orange"> <i class="fa-solid fa-map"></i> </a>
+            <a href="../admin.html?page=Dashboard" class="admin-menu-item lightblue"> <i
+                    class="fa-solid fa-chart-line"></i> </a>
+        </nav>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../../js/UserDE/Profile.js"></script>
+</body>
+
+</html>

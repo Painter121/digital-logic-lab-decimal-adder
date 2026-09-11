@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimalCare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="../../../css/adminDE/animalCare/insert2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title" id="title"> </div>
+        <div class="content">
+            <div id="employee-list" class="list">
+                <h3>Employees</h3>
+                <p id="selected-employee">Selected: None</p>
+                <div class="box2">
+
+                </div>
+            </div>
+            <div id="animal-list" class="list">
+                <h3>Animals</h3>
+                <p id="selected-animal">Selected: None</p>
+                <div class="box2">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="selectBT">
+            <button>Select</button>
+        </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+
+    <div id="notification" class="notification">
+        <!-- <p id="Notification">Notification</p> -->
+        <p id="text121">This entry already exists in the system</p><br>
+        <button onclick="closeNotification()">Ok</button>
+    </div>
+
+</body>
+<script src="../../../js/adminDE/animalCare/insert2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>
+

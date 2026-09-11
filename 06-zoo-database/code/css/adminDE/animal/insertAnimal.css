@@ -1,0 +1,385 @@
+/* เพิ่ม box-sizing ในทุกองค์ประกอบ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+.box2{
+    display: flex;
+}
+.details-card .form-group-1 {
+    flex: 1;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+.details-card .form-group-2 {
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.details-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details-card .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.details-card label {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.details-card input, .details-card textarea, .details-card select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* ให้มีความกว้างเต็มที่ */
+    margin: 0; /* ลบระยะห่าง */
+}
+
+.details-card textarea {
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.details-card select {
+    background-color: #f9f9f9;
+    appearance: none; /* ลบลักษณะของ select default */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.details-card select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background-color: #fff;
+}
+
+.details-card button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.details-card button:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+/* เพิ่มสไตล์สำหรับการแสดงตัวอย่างรูปภาพ */
+#imagePreview {
+    width: 100%;
+    height: auto;
+    max-width: 100%;  /* ขนาดสูงสุดของรูปภาพ */
+    max-height: 200px; /* จำกัดความสูงของภาพ */
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    object-fit: contain; /* ให้ภาพไม่ผิดรูปแบบ */
+}
+
+#imagePreviewContainer {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    display: none; /* ซ่อน container นี้เมื่อยังไม่มีการเลือกภาพ */
+    border: 2px dashed #4CAF50; /* เส้นขอบปะ */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* สีพื้นหลังของ container */
+}
+
+/* เพิ่มสไตล์สำหรับปุ่ม custom file input */
+.image-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 2px dashed #4CAF50; /* เส้นขอบปะ */
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease; /* สำหรับการทำให้สวยงามเมื่อ hover */
+    background-color: #f9f9f9;
+    position: relative;
+    width: 100%; /* ให้ container กว้างเต็มที่ */
+    box-sizing: border-box;
+}
+
+.image-upload-container:hover {
+    background-color: #eaf2e6; /* สีพื้นหลังเมื่อ hover */
+    border-color: #45a049; /* เปลี่ยนเส้นขอบเป็นสีเข้มขึ้น */
+}
+
+.add-image-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.add-image-btn:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+/* แสดงข้อความแนะนำสำหรับการเพิ่มรูป */
+#imagePrompt {
+    font-size: 16px;
+    color: #4CAF50;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+/* เพิ่มการซ่อนเส้นประของปุ่มเมื่อมีการแสดงรูปภาพ */
+.image-upload-container img {
+    display: block;
+}
+
+.image-upload-container img + #imagePrompt {
+    display: none; /* ซ่อนข้อความแนะนำเมื่อมีรูปภาพ */
+}
+
+.image-upload-container.uploaded {
+    border: none; /* ซ่อนเส้นขอบปะ */
+    background-color: #ffffff; /* เปลี่ยนพื้นหลังเมื่อมีการอัปโหลดรูป */
+}
+
+
+/* select zone */
+#selectZoneBtn{
+    background-color: #d3af1c;
+    border: none;
+ }
+ #selectZoneBtn:hover{
+    background-color: #b7981b;
+    border: none;
+ }
+
+.modal {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-height: 80%;
+    overflow: auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.zone-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 16px; 
+    justify-content: center;
+}
+
+.zone-item {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px; 
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#zoneName{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.zone-item:hover {
+    background-color: #d3af1c;
+    color:#fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+#zoneModal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#zoneModal .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%; /* ปรับขนาด Modal */
+    max-width: 600px;
+    max-height: 80%; /* จำกัดความสูง */
+    overflow-y: auto; /* Scrollbar เฉพาะภายใน */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Button Styling */
+#selectCategoryBtn {
+    background-color: #d3af1c;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+#selectCategoryBtn:hover {
+    background-color: #b79718;
+}
+
+/* Modal Styling */
+.category-modal {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    max-height: 80%;
+    overflow: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+.category-close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Category List */
+.category-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 12px;
+    justify-content: center;
+}
+
+.category-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-item:hover {
+    background-color: #4caf50;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#Type-Diet{
+    border: 1px solid rgb(72, 79, 76);
+}
+#textType{
+    font-size: small;
+}
+
+/* Scrollbar Customization */
+.category-modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+.category-modal-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+.category-modal-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/UserDE/WaterZone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="../../css/tool.css">
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <script src="../js/tool.js"></script>
+
+</head>
+<body> 
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <a href="../Home.html"><i class="fa-solid fa-hippo"></i></a>
+            </div>
+            <ul>
+                <li><a href="../Home.html">Home</a></li>
+                <li><a href="../UserDE/animallist.html">Animals</a></li>
+                <li><a href="../About.html">About</a></li>
+                <li><a href="../Contact.html">Contact</a></li>
+                <li id="user-menu">
+                    <a href="../Login.html" id="login-link">Login</a>
+                    <ul class="dropdown" id="dropdown-menu">
+                        <li><a href="../Favorites.html">Favorite</a></li>
+                        <li><a href="../Home.html" id="logout-link">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div> 
+        <nav>
+            <div class="PIC">
+            </div>
+            <div class="title">
+                <h1>Aquatic Zone</h1>
+                <p>Explore the vibrant world of aquatic life and discover the beauty of marine ecosystems!</p>
+            </div>
+        </nav>
+        <div class="content" id="animalCards">
+            <!-- Animal cards -->
+        </div>
+        <nav class="admin-menu" id="Admin-menu" style="display: none;">
+            <input type="checkbox" href="#" class="admin-menu-open" name="admin-menu-open" id="admin-menu-open">
+            <label class="admin-menu-open-button" for="admin-menu-open">
+                <span class="admin-lines admin-line-1"></span>
+                <span class="admin-lines admin-line-2"></span>
+                <span class="admin-lines admin-line-3"></span>
+            </label>
+            <a href="../admin.html?page=category" class="admin-menu-item blue"> <i class="fa-solid fa-icons"></i></a>
+            <a href="../admin.html?page=animalCare" class="admin-menu-item green">  <i class="fa-solid fa-hands-holding"></i></a>
+            <a href="../admin.html?page=animals" class="admin-menu-item red"><i class="fa-solid fa-crow"></i> </a>
+            <a href="../admin.html?page=employee" class="admin-menu-item purple"> <i class="fa-solid fa-address-card"></i></i></a>
+            <a href="../admin.html?page=zone" class="admin-menu-item orange"> <i class="fa-solid fa-map"></i> </a>
+            <a href="../admin.html?page=Dashboard" class="admin-menu-item lightblue"> <i class="fa-solid fa-chart-line"></i> </a>
+        </nav>
+        <footer>
+            <p>© 2025 Zoo Painter. All rights reserved.</p>
+            <p>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact Us</a>
+            </p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../../js/UserDE/WaterZone.js"></script>
+</body>
+</html>

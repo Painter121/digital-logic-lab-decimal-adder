@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #000000; */
+
+}
+
+* a {
+    text-decoration: none;
+}
+
+* li {
+    list-style: none;
+}
+
+.container{
+    /* border: 5px solid rgb(0, 30, 255); */
+    height: 100vh;
+}
+
+.logo a {
+    font-size: 2.2rem;
+    color: #ffffff;
+    /* border: 1px solid rgb(10, 200, 207); */
+    transition: 500ms;
+}
+
+.logo a:hover {
+    font-size: 3rem;
+    color: #ffffff;
+    /* border: 1px solid rgb(10, 200, 207); */
+    transition: 200ms;
+}
+
+.menu {
+    /* border: 1px solid red; */
+    position: relative;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 15vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.menu ul {
+    /* border: 1px solid rgb(131, 10, 94); */
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li {
+    /* border: 1px solid rgb(36, 182, 109);    */
+    margin-right: 15%;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    transition: 500ms;
+}
+
+.menu ul li a:hover {
+    color: #dfd8cf;
+    font-size: 25px;
+    transition: 200ms;
+}
+
+
+
+/*  .otp-section */
+.otp-section {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top:50px;
+    border-radius: 20px;
+}
+
+.otp-box {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2b7ebe;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boxInput{
+    width: 100%;
+    
+}
+
+.timer {
+    font-size: 18px;
+    margin-top: 20px;
+    color: red;
+}
+#email{
+    width: auto;
+    padding: 5px;
+    width: 40%;
+    height: 40px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+#otp-input-container #otp{
+    height: 30px;
+    width: 30%;
+    padding: 5px;
+}
+#otp-input-container label{
+    font-size: 18px;
+}
+
+#verify-otp{
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 200px;
+}
+#otp-input-container{
+    margin-top: 30px;
+   
+}
+/*ฟิลด์ OTP */
+.otp-field {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    
+}
+.boxOtp{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.otp-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}

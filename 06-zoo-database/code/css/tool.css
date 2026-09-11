@@ -1,0 +1,182 @@
+
+.admin-menu {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 160px;
+    height: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+.admin-menu-item,
+.admin-menu-open-button {
+    background: #e4e4e4;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: -40px;
+    position: absolute;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 80px;
+    transform: translate3d(0, 0, 0);
+    transition: transform ease-out 200ms;
+}
+
+.admin-menu-open {
+    display: none;
+}
+
+.admin-lines {
+    width: 25px;
+    height: 3px;
+    background: #596778;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -12.5px;
+    margin-top: -1.5px;
+    transition: transform 200ms;
+}
+
+.admin-line-1 {
+    transform: translate3d(0, -8px, 0);
+}
+
+.admin-line-2 {
+    transform: translate3d(0, 0, 0);
+}
+
+.admin-line-3 {
+    transform: translate3d(0, 8px, 0);
+}
+
+.admin-menu-open:checked+.admin-menu-open-button .admin-line-1 {
+    transform: translate3d(0, 0, 0) rotate(45deg);
+}
+
+.admin-menu-open:checked+.admin-menu-open-button .admin-line-2 {
+    transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+
+.admin-menu-open:checked+.admin-menu-open-button .admin-line-3 {
+    transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+.admin-menu-item:hover {
+    background: #EEEEEE;
+    color: #3290B1;
+}
+
+.admin-menu-open-button {
+    z-index: 2;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 400ms;
+    transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.admin-menu-open-button:hover {
+    transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.admin-menu-open:checked+.admin-menu-open-button {
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+    transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.admin-menu-open:checked~.admin-menu-item {
+    transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+.admin-menu-open:checked~.admin-menu-item:nth-child(3) {
+    transition-duration: 180ms;
+    transform: translate3d(0, -60px, 0);
+}
+
+.admin-menu-open:checked~.admin-menu-item:nth-child(4) {
+    transition-duration: 280ms;
+    transform: translate3d(0, -120px, 0);
+}
+
+.admin-menu-open:checked~.admin-menu-item:nth-child(5) {
+    transition-duration: 380ms;
+    transform: translate3d(0, -180px, 0);
+}
+
+.admin-menu-open:checked~.admin-menu-item:nth-child(6) {
+    transition-duration: 480ms;
+    transform: translate3d(0, -240px, 0);
+}
+
+.admin-menu-open:checked~.admin-menu-item:nth-child(7) {
+    transition-duration: 580ms;
+    transform: translate3d(0, -300px, 0);
+}
+
+.admin-menu-open:checked~.admin-menu-item:nth-child(8) {
+    transition-duration: 680ms;
+    transform: translate3d(0, -360px, 0);
+}
+
+.admin-menu-open:checked~.admin-menu-item:nth-child(9) {
+    transition-duration: 780ms;
+    transform: translate3d(0, -420px, 0);
+}
+
+.blue {
+    background-color: #669AE1;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.green {
+    background-color: #70CC72;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.red {
+    background-color: #FE4365;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.purple {
+    background-color: #C49CDE;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.orange {
+    background-color: #FC913A;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.lightblue {
+    background-color: #62C2E4;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+.admin-menu-item i {
+    font-size: 20px;  /* ปรับขนาดไอคอน */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    z-index: 9999;
+}

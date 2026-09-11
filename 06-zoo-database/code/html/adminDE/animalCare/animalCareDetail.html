@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="../../../css/adminDE/animalCare/animalCareDetail.css">
+</head>
+<body>
+    <div class="container">
+        <div class="animalCareDetails">
+            <div class="box">
+                <div class="title">
+                    
+                    <h1><i class="fa-solid fa-hands-holding"></i> Animal_Care List</h1>
+
+                    <div class="searchBar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="resultCount" style="margin-right: 10px; font-size: 20px; color: #248132;"></div>                   
+                        <input type="search" placeholder="Search by Employee, Animal, Zone, DateOfCare">
+                    </div>
+                </div> 
+                <table id="animalCareTable" >
+                    <thead>
+                        <tr>
+                            <th>Employee</th>
+                            <th>Animal</th>
+                            <th>Zone</th>
+                            <th>DateOfCare</th>
+                            <th>DeleteRelation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- data -->
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <button id="prevPage" disabled>Previous</button>
+                    <div id="pageNumbers" class="page-numbers"></div>
+                    <button id="nextPage">Next</button>
+                </div>
+            </div>
+        </div>
+        <div id="deleteModal" class="modal">
+            <div class="modal-content">
+                <h2>Confirm Delete</h2>
+                <p>Are you sure you want to delete this record?</p>
+                <p id="Relation"></p>
+                <label>
+                    <input type="checkbox" id="confirmCheckbox"> I confirm this action
+                </label>
+                <div class="modal-buttons">
+                    <button id="confirmButton" disabled>Confirm</button>
+                    <button id="cancelButton">Cancel</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <button class="fixed-button" onclick="goToInsert()"><i class="fa-solid fa-plus"></i></button> -->
+        <button class="fixed-button" onclick="goToInsert()">
+            <div class="sign">+</div>
+            <div class="text">Insert</div>
+        </button>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../../../js/adminDE/animalCare/animalCareDetail.js" defer></script>
+</html>

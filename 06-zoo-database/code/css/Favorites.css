@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    /* border: 2px solid red; */
+    /* background-color: darkgray; */
+}
+
+nav{
+    position: relative;
+    /* position: fixed; */
+    margin-top: -15vh;
+    /* border: 3px solid rgb(18, 160, 58); */
+    height: 140vh;
+}
+.logo a{
+    font-size: 2.2rem;
+    color: #ffffff;
+    /* border: 1px solid rgb(10, 200, 207); */
+    transition: 500ms;
+}
+.logo a:hover{
+    font-size: 3rem;
+    color: #ffffff;
+    /* border: 1px solid rgb(10, 200, 207); */
+    transition: 200ms;
+}
+
+    .PIC {
+        position: relative;
+        top: 0;
+        height: 90vh;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 90vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content:space-between;
+        align-items: start;
+        padding-top: 30px; 
+    }
+    .PIC::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150%;
+        background-color: #784D24;
+        background-image: url('../../pic/elephant-back.jpg');
+        z-index: -1;
+        background-size: cover;
+        background-position: top center; 
+        filter: brightness(60%);
+        background-repeat: no-repeat;
+        filter: brightness(60%);
+        transition: background-position 0.2s ease-out; 
+    }
+    .PIC::after {
+        background-position: center var(--background-position-y, 0px);
+    }
+    
+    .menu {
+        position: sticky;
+        background-color: transparent;
+        top: 0;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 13vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content:space-between;  
+        align-items: center;
+        z-index: 9999;
+        transition: background-color 0.5s; 
+        background-color: #000000;
+    }
+    .menu.sticky {
+        background-color: rgb(14, 6, 6); 
+    }
+
+    .menu ul{
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+    .menu ul li{
+        margin-right: 15%;
+        list-style: none;
+        
+    }
+    .menu ul li a{
+    
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+        transition: 500ms;
+    }
+    .menu ul li a:hover{
+        color: #ffffff;
+        font-size: 25px;
+        transition: 200ms;
+    }
+
+
+    #user-menu {
+        position: relative;
+    }
+    #dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+        background-color: #000000;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1); 
+        min-width: 160px; 
+    }
+    
+    #dropdown-menu li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 8px 16px;
+        display: block;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        border-radius: 4px; 
+        transition: 100ms;
+    }
+
+    .content{
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-top: 30px;
+        min-height: 500px;
+        padding: 20px;
+    }
+
+
+    .profile-card {
+        background: white;
+        padding: 15px 20px;
+        width: 100%;
+        max-width: 350px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+    .profile-card:hover{
+        background-color: #f2efef;
+        transform: scale(1.1); 
+    }
+    .profile-card:active{
+        transform: scale(1); 
+    }
+    
+    .profile-card h2 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    
+    .profile-info {
+        text-align: left;
+        
+        color: #555;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .profile-info p {
+        display: flex;
+        align-items: center;
+        line-height: 1.6;
+        font-size: 20px;
+    }
+    
+    .profile-info strong {
+        line-height: 1.6;
+        font-size: 18px;
+    }
+    
+    .profile-info i {
+        margin-right: 10px;
+        color: #007bff;
+    }
+    
+    
+
+.title{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid #007bff;
+    /* border-bottom: 4px solid rgb(6, 102, 48); */
+}
+.title p{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.title .fa-solid{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* animal cards */
+.animal-cards-container {
+    /* border: 1px solid rgb(24, 9, 183); */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+    padding: 80px;
+    width: 100%;
+}
+
+/* animal card styling */
+.card {
+    /* border: 1px solid rgb(29, 196, 190); */
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .info {
+    padding: 15px;
+}
+
+.card .info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card .info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.card .info p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color: #000000; 
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+        color: white; 
+        text-align: center;
+        height: 100px;
+        padding: 20px 0;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); 
+    }
+    
+    footer p a{
+        text-decoration: none;
+        list-style: none;
+        color: #ffffff;
+    }

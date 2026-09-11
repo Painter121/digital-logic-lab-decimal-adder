@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="pic\panda.png">
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <a href="Home.html"><i class="fa-solid fa-hippo"></i></a>
+            </div>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="UserDE/animallist.html">Animals</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="UserRegister.html">Register</a></li>
+            </ul>
+            
+        </div>
+
+        <div class="content">
+            <div class="header"><i class="fa-solid fa-right-to-bracket"> Login</i></div>
+            <div class="card">
+                <form>
+                    <label for="username">Username</label>
+                    <div class="BoxUser">
+                        <input type="text" id="username" name = "username" placeholder="Username  or Email..." >
+                    </div>
+                    <div>
+                        <div class="input-group">
+                            <label for="password">password</label>
+                            <input type="password" name="password" id="password" placeholder="Password...">
+                            <span class="toggle-password" onclick="togglePassword('password', 'togglePasswordIcon')">
+                                <i id="togglePasswordIcon" class="fas fa-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="dialog" >
+                        <!-- <p >Login successful!</p> -->
+                    </div>
+                    <div class="button">
+                        <button onclick="submitData(event)" class = "BTSubmit" type="button">Login</button>
+                    </div>
+                    <div class="register"> <a href="UserRegister.html">Register</a></div>
+                    
+                </form>
+                <div class="ch-pass" id="ch-pass"></div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../js/Login.js" defer></script>
+</html>

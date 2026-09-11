@@ -1,0 +1,236 @@
+/* Green (#009B4D),(#003400), tangerine yellow (#FFCC00), ivory (#FAF5E9) */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+.container{
+    /* border: 4px solid red; */
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* background-color: rgb(142, 177, 177); */
+    overflow: hidden;
+}
+
+/* #sidebar{
+    position: sticky;
+    top: 0;
+    align-self: self-start;
+    width: 270px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-left: 20px;
+    background-color: #388e3c;
+    transition: 300ms ease-in-out;
+    overflow: hidden;
+    text-wrap: nowrap;
+} */
+#sidebar {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    width: 270px;
+    min-height: 100vh;
+    /* background-color: #388e3c; */
+    background-color: #201f1f;
+    transition: 300ms ease-in-out;
+    overflow-y: auto; /* ให้ sidebar เลื่อนเอง */
+    max-height: 100vh; /* กำหนดให้ sidebar ไม่เกินขนาดหน้าจอ */
+    scrollbar-width: none; /* ซ่อน scrollbar ใน Firefox */
+    -ms-overflow-style: none; /* ซ่อน scrollbar ใน IE และ Edge */
+}
+#sidebar::-webkit-scrollbar {
+    display: none; /* ซ่อน scrollbar ใน Chrome, Safari */
+}
+
+
+#sidebar.closeSidebar{
+    padding: 5px;
+    width: 70px;
+}
+
+/* #sidebar ul{
+    list-style: none;
+} */
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* #sidebar ul li:first-child{
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+} */
+#sidebar ul li:first-child {
+    font-size: 40px;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #201f1f;
+    z-index: 1000; 
+}
+
+#sidebar a , #sidebar button{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 17px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 31px;
+
+}
+
+#sidebar button{
+    background-color: #201f1f;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+#sidebar button:hover{
+    background-color: #2a2929;
+
+}
+
+#sidebar a:hover{
+    background-color: #2a2929;
+}
+
+/* .content{
+    border: 5px solid red;
+} */
+.content iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Modal Style */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* เพิ่มความมืดของพื้นหลัง */
+    transition: opacity 0.3s ease; /* เพิ่มการเปลี่ยนแปลงความโปร่งใส */
+}
+
+/* Modal Style */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background */
+    transition: opacity 0.3s ease;
+
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    width: 60%;
+    height: 200px;
+    max-width: 400px;
+    animation: fadeIn 0.3s ease;
+    /* border: 1px solid rgb(9, 208, 115); */
+    display: flex;
+    flex-direction: column;
+   
+}
+.modal-content p{
+    font-size: 20px;
+}
+.modal-content .box1{
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.modal-content .box2{
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Close Button */
+.close {
+    color: #888;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+}
+
+/* Buttons Styling */
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.m-bt-o {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    /* border: 1px solid red; */
+    margin-right: 20px;
+}
+
+/* Confirm Button */
+.confirm-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.confirm-btn:hover {
+    background-color: #45a049;
+}
+
+/* Cancel Button */
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #da190b;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+

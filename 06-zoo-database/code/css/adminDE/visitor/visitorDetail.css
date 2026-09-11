@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f5f5;
+}
+.container{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    
+}
+
+.container .VisitorDetails {
+    /* border: 1px solid rgb(56, 24, 216); */
+    padding: 20px;
+    height: auto;
+}
+
+.container .VisitorDetails .box table {
+    border: none; 
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container .VisitorDetails .box table th {
+    background-color: #201f1f; 
+    color: white; 
+    font-weight: bold; 
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid #ddd; 
+    max-width: 150px; 
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+.container .VisitorDetails .box table td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: #333; 
+    border-bottom: 1px solid #ddd; 
+    max-width: 150px; 
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+.container .VisitorDetails .box table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* title */
+.title {
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #201f1f, #2a2929); /* ไล่สีจากเขียวเข้มไปเขียวอ่อน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาให้ดูมีมิติ */
+    border-radius: 10px; /* มุมโค้งให้ดูเรียบ */
+}
+
+.title h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+.searchBar {
+    border: 1px solid #201f1f; 
+    flex: 2;
+    display: flex;
+    padding: 8px 15px;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+}
+
+.searchBar:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* เพิ่มเงาเมื่อ hover */
+}
+
+.searchBar i {
+    margin-right: 12px;
+    color: #201f1f; /* สีเขียวเข้ม */
+    font-size: 20px; /* ขนาดไอคอน */
+}
+
+.searchBar input {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    color: #201f1f; /* สีเขียวเข้ม */
+    font-family: 'Arial', sans-serif;
+}
+
+.searchBar input::placeholder {
+    color: #777575; 
+    font-style: italic;
+}
+
+.searchBar input:focus {
+    border: 2px solid #201f1f; /* เปลี่ยนสีเมื่อ focus */
+    box-shadow: 0 0 5px #201f1f; /* เงาเบาๆ เมื่อ focus */
+}
+
+.viewButton:hover i {
+    color: rgb(238, 216, 19);
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+/* tooltip */
+.custom-tooltip {
+    position: fixed;
+    background-color: #1e1d1d;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    z-index: 1000;
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateX(-50%);
+}
+.custom-tooltip::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent;
+    
+}
+
+.modal { 
+    display: none; 
+    position: fixed; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+}
+
+.close { 
+    cursor: pointer; 
+    float: right; 
+    font-size: 20px; 
+}
+
+.role-button {
+    background-color: #201f1f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 80px; /* ทำให้ปุ่มเท่ากัน */
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.role-button:hover {
+    background-color: #5c5a5a; /* เปลี่ยนสีเมื่อ hover */
+}
+
+
+/* tooltip */
+.custom-tooltip {
+    position: fixed;
+    background-color: #1e1d1d;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    z-index: 1000;
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateX(-50%);
+}
+.custom-tooltip::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent;
+    
+}
+
+
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Box */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 35%;
+    /* min-height: 250px; */
+    text-align: center;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f44336;
+}
+
+/* RoleBox */
+.RoleBox {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Modal Title */
+.modal-title {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Modal Message */
+.modal-message {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Select Box */
+#modalRole {
+    width: 80%;
+    padding: 10px;
+    margin: 25px 0;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+
+}
+
+/* Buttons */
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+/* Save Button */
+.save-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+.save-btn:hover {
+    background-color: #167c2e;
+    transform: scale(1.05);
+}
+
+/* Confirm & Cancel Buttons */
+.confirm-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.confirm-btn:hover, .cancel-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+#confirmMessage{
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+}
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.pagination button:hover {
+    background-color: #232323;
+    transform: scale(1.05);
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 5px;
+}
+
+.page-number {
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.page-number:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+}
+
+.page-number.active {
+    background-color: #000000;
+    color: white;
+}
+
+.dots {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+}

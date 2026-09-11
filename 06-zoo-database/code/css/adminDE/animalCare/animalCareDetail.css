@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f5f5;
+}
+.container{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+}
+
+.container .animalCareDetails {
+    /* border: 1px solid rgb(56, 24, 216); */
+    padding: 20px;
+    height: auto;
+}
+
+.container .animalCareDetails .box table {
+    border: none; 
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เงาตาราง */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container .animalCareDetails .box table th {
+    background-color: #201f1f; 
+    color: white; 
+    font-weight: bold; 
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid #ddd; 
+    max-width: 150px; 
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+.container .animalCareDetails .box table td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: #333; 
+    border-bottom: 1px solid #ddd; 
+    max-width: 150px; 
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+.container .animalCareDetails .box table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* fixe Button */
+.fixed-button {
+    display: flex;
+    position: fixed;
+    bottom: 50px;
+    right: 20px; 
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: black;
+    border-radius: 50%;
+}
+.sign {
+    width: 100%;
+    font-size: 2em;
+    color: white;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition-duration: .3s;
+}
+.fixed-button:hover {
+    width: 125px;
+    border-radius: 0px;
+    transition-duration: .3s;
+    border-radius: 10px;
+}
+
+.fixed-button:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+}
+.fixed-button:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 20px;
+}
+.fixed-button:active {
+    transform: translate(2px ,2px);
+}
+
+
+
+
+.title {
+    border: 1px solid #000000; /* สีเขียวสดใส */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #201f1f, #201f1f); /* ไล่สีจากเขียวเข้มไปเขียวอ่อน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาให้ดูมีมิติ */
+    border-radius: 10px; /* มุมโค้งให้ดูเรียบ */
+}
+
+.title h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    color: #ffffff; /* ข้อความสีขาว */
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+.searchBar {
+    border: 1px solid #000000; /* สีเขียวเข้ม */
+    flex: 2;
+    display: flex;
+    padding: 8px 15px;
+    align-items: center;
+    border-radius: 30px; /* เพิ่มมุมโค้งให้สวยงาม */
+    background-color: #ffffff; /* พื้นหลังขาว */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+    transition: all 0.3s ease; /* เอฟเฟกต์เวลา hover */
+}
+
+.searchBar:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* เพิ่มเงาเมื่อ hover */
+}
+
+.searchBar i {
+    margin-right: 12px;
+    color: #201f1f; /* สีเขียวเข้ม */
+    font-size: 20px; /* ขนาดไอคอน */
+}
+
+.searchBar input {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    color: #201f1f; /* สีเขียวเข้ม */
+    font-family: 'Arial', sans-serif;
+}
+
+.searchBar input::placeholder {
+    color: rgb(110, 110, 110); /* สีเขียวอ่อนสำหรับ placeholder */
+    font-style: italic;
+}
+
+.searchBar input:focus {
+    border: 2px solid #201f1f; /* เปลี่ยนสีเมื่อ focus */
+    box-shadow: 0 0 5px rgba(31, 31, 31, 0.5); /* เงาเบาๆ เมื่อ focus */
+}
+
+
+.DeleteButton:hover i {
+    color: rgb(255, 255, 0);
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* Modal Background */
+/* Modal Background */
+.modal {
+    display: none; /* ซ่อน Modal */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* พื้นหลังโปร่งใส */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease; /* เพิ่มเอฟเฟกต์ */
+}
+
+/* Animation for Modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Modal Content */
+.modal-content {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0); /* ใช้ Gradient */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* เงาสำหรับความลึก */
+    text-align: center;
+    width: 350px;
+    animation: slideIn 0.4s ease; /* เพิ่มเอฟเฟกต์เลื่อนเข้ามา */
+}
+
+/* Animation for Modal Content */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Title */
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Text */
+.modal-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Label */
+.modal-content label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Checkbox */
+.modal-content input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+    accent-color: #201f1f; /* ใช้สีที่ทันสมัย */
+}
+
+/* Modal Buttons */
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.modal-buttons button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Cancel Button */
+#cancelButton {
+    background-color: #ddd;
+    color: #555;
+}
+
+#cancelButton:hover {
+    background-color: #bbb;
+}
+
+/* Confirm Button */
+#confirmButton {
+    background-color: #e63946;
+    color: white;
+    cursor: not-allowed; /* Default: Disabled */
+    opacity: 0.7;
+}
+
+#confirmButton.enabled {
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#confirmButton:hover {
+    background-color: #c72536; /* สีเข้มขึ้นเมื่อ hover */
+}
+
+/* tooltip */
+.custom-tooltip {
+    position: fixed;
+    background-color: #1e1d1d;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    z-index: 1000;
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateX(-50%);
+}
+.custom-tooltip::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent;
+    
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination button {
+    background-color: #201f1f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.pagination button:hover {
+    background-color: #201f1f;
+    transform: scale(1.05);
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 5px;
+}
+
+.page-number {
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.page-number:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+}
+
+.page-number.active {
+    background-color: #201f1f;
+    color: white;
+}
+
+.dots {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+}

@@ -1,0 +1,253 @@
+:root{
+    --background--pic: url("https://www.hdwallpapers.in/download/black_white_panda_is_sitting_on_tree_trunk_4k_hd_panda-3840x2160.jpg");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #000000; */
+    /* font-family: "Sour Gummy", sans-serif; */
+}
+
+* a{
+    text-decoration: none;
+}
+* li{
+    list-style: none;
+}
+
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background-image: url(../../pic/panda.jpg);
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+
+}
+
+.logo a{
+    font-size: 2.2rem;
+    color: #ffffff;
+    /* border: 1px solid rgb(10, 200, 207); */
+    transition: 500ms;
+}
+.logo a:hover{
+    font-size: 3rem;
+    color: #ffffff;
+    /* border: 1px solid rgb(10, 200, 207); */
+    transition: 200ms;
+}
+
+    .menu {
+        /* border: 1px solid red; */
+        position: relative;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 15vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .menu ul{
+        /* border: 1px solid rgb(131, 10, 94); */
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+    .menu ul li{
+        /* border: 1px solid rgb(36, 182, 109);    */
+        margin-right: 15%;
+    }
+    .menu ul li a{
+        color: #ffffff;
+        font-size: 20px;
+        transition: 500ms;
+    }
+    .menu ul li a:hover{
+        color: #dfd8cf;
+        font-size: 25px;
+        transition: 200ms;
+    }
+
+
+.content{
+    border: 5px solid rgb(255, 255, 255);
+    position: relative;
+    border-radius: 30px;
+    padding: 20px;
+    padding-top: 5%;
+    width: 30%;
+    min-height: 80vh;
+    margin: auto;
+    backdrop-filter: blur(4px);
+    animation-name: move-up;
+    animation-duration: 2s;     
+}
+@keyframes move-up{
+    0%{
+        backdrop-filter: blur(0px); top: 600px
+    }
+    50%{
+        backdrop-filter: blur(2px); 
+    }
+    100%{
+        backdrop-filter: blur(4px); top: 0px;
+    }
+}
+.header{
+    /* border: 1px solid rgb(12, 201, 27); */
+    display: flex;
+    justify-content: center;
+    
+}
+.header i {
+    color: #ffffff;
+    font-size: 35px;
+}
+.card{
+    /* border: 1px solid rgb(128, 32, 162); */
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.BoxUser{
+    margin-bottom: 10%;
+    /* border: 1px solid rgb(138, 171, 18); */
+}
+
+.card form [type=text]{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.card form [type=password]{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.card form .BTSubmit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card form label{
+    color: #ffffff;
+    font-size: 25px;
+}   
+
+.card form button{
+    padding: 10px;  
+    border-radius: 10px;
+    cursor: pointer;
+    width: 130px;
+    transition: 500ms;
+    
+}
+.card form button:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px;
+    transition: 300ms;
+}
+
+.register{
+    color: rgb(255, 255, 255);
+    /* border: 1px solid red; */
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.register a{
+    color: rgb(255, 255, 255);
+    transition: 200ms;
+}
+.register a:hover{
+    color: rgb(0, 0, 0);
+    transition: 200ms;
+}
+
+.ch-pass{
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.ch-pass a{
+    color: rgb(255, 255, 255);
+    transition: 200ms;
+}
+.ch-pass a:hover{
+    color: rgb(0, 0, 0);
+    transition: 200ms;
+}
+
+.dialog{
+    /* border: 1px solid rgb(167, 0, 0); */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+.dialog p{
+    color: #ed9393;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
+    
+
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    bottom: 14%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.toggle-password i {
+    font-size: 20px;
+}

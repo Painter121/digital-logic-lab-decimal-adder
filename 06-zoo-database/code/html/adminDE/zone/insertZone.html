@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Management</title>
+    <link rel="stylesheet" href="../../../css/adminDE/zone/insertZone.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Zoo Management System</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis inventore sed commodi fugit autem eveniet debitis. Quas </p>
+        </header>
+        <main>
+            <section class="form-section">
+                <h2>Add a New Zone</h2>
+                <form id="zoneForm">
+                    <div class="input-group">
+                        <label for="zoneName">Zone Name</label>
+                        <input type="text" id="zoneName" name="zoneName" placeholder="Enter zone name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="animalCapacity">Animal Capacity</label>
+                        <input type="number" id="animalCapacity" name="animalCapacity" placeholder="Enter animal capacity" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="employeeCapacity">Employee Capacity</label>
+                        <input type="number" id="employeeCapacity" name="employeeCapacity" placeholder="Enter employee capacity" required>
+                    </div>
+                    <button type="submit">Add Zone</button>
+                </form>
+            </section>
+            <section class="zones-list">
+                <h2>Existing Zones</h2>
+                <ul id="zoneList">
+                    <li>No zones added yet</li>
+                </ul>
+                <div id="buttonZone">
+        
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="../../../js/adminDE/zone/insertZone.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

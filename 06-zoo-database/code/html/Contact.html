@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            /* border: 1px solid red; */
+            text-align: center;
+            font-size: 25px;
+            padding: 20px;
+        }
+
+        .main {
+            /* border: 1px solid rgb(13, 68, 218); */
+            padding: 5%;
+            padding-top: 0px;
+            display: flex;
+            justify-content: center;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            /* border: 1px solid red; */
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #45a049;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            /* border: 1px solid red; */
+
+        }
+
+        input[type=submit]:hover {
+            background-color: #38823c;
+        }
+
+        .container {
+            /* border: 1px solid red; */
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: 50%;
+        }
+
+        .bt-s {
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .age-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+
+        .back {
+            /* border: 1px solid red; */
+            text-align: center;
+            margin-top: 10px;
+
+        }
+
+        .back a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .back a:hover {
+            text-decoration: underline;
+            color: rgb(39, 39, 39);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h3>Contact Form</h3>
+    </div>
+    <div class="main">
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                <label for="age">Age</label>
+                <div class="age-container">
+                    <select id="age" name="age">
+                        <option value="0-18">0 - 18</option>
+                        <option value="19-30">19 - 30</option>
+                        <option value="31-45">31 - 45</option>
+                        <option value="46-60">46 - 60</option>
+                        <option value="61+">61+</option>
+                    </select>
+                </div>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
+                    required></textarea>
+                <div class="bt-s">
+                    <input type="submit" value="Submit">
+                </div>
+                <div class="back">
+                    <a href="Home.html">Back</a>
+                </div>
+            </form>
+        </div>
+        <div id="loading-modal"
+            style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">
+            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                <p>กำลังโหลด...</p>
+                <div class="spinner"
+                    style="margin-top: 10px; border: 5px solid #f3f3f3; border-top: 5px solid #0c691f; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite;  margin-left: auto; margin-right: auto;">
+                </div>
+            </div>
+        </div>
+        <!-- Animation สำหรับ Spinner -->
+        <style>
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modal = document.createElement("div");
+            modal.classList.add("OTPmes");
+            modal.innerHTML = `
+        <div class="modal-overlay"></div>
+        <div class="modal-box">
+            <p id="modal-message"></p>
+            <button id="modal-ok">ตกลง</button>
+        </div>
+    `;
+            document.body.appendChild(modal);
+            function disableScroll() {
+                document.body.style.overflow = "hidden";
+            }
+
+            function enableScroll() {
+                document.body.style.overflow = "";
+            }
+            window.OTPmes = function (message) {
+                document.getElementById("modal-message").textContent = message;
+                modal.style.display = "flex";
+                disableScroll();
+            };
+            document.getElementById("modal-ok").addEventListener("click", function () {
+                modal.style.display = "none";
+                enableScroll();
+                window.location.href = 'Home.html';
+            });
+        });
+        const style = document.createElement("style");
+        style.textContent = `
+    .OTPmes {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw; height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .modal-overlay {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+    }
+    .modal-box {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        position: relative;
+        min-width: 250px;
+    }
+    .modal-box button {
+        margin-top: 10px;
+        padding: 5px 15px;
+        border: none;
+        background: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .modal-box button:hover {
+        background: #0056b3;
+    }
+`;
+        document.head.appendChild(style);
+
+        // แสดงสถานะการโหลด
+        function showLoadingModal() {
+            const modal = document.getElementById('loading-modal');
+            if (modal) {
+                modal.style.display = 'flex'; // แสดง modal แบบกลางจอ
+            }
+        }
+
+        // ซ่อนสถานะการโหลด
+        function hideLoadingModal() {
+            const modal = document.getElementById('loading-modal');
+            if (modal) {
+                modal.style.display = 'none'; // ซ่อน modal
+            }
+        }
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const formData = {
+                FirstName: document.getElementById("fname").value,
+                LastName: document.getElementById("lname").value,
+                Age: document.getElementById("age").value,
+                Subject: document.getElementById("subject").value
+            };
+            showLoadingModal();
+            axios.post("http://localhost:3000/user/ContactAdmin", formData)
+                .then(response => {
+                    console.log("Success:", response.data);
+                    OTPmes("Form submitted successfully!");
+                    document.getElementById("fname").value = '',
+                        document.getElementById("lname").value = '',
+                        document.getElementById("age").value = '',
+                        document.getElementById("subject").value = ''
+                })
+                .catch(error => {
+                    console.error("Error:", error.response ? error.response.data : error.message);
+                    alert("There was an error submitting the form.");
+                    window.location.reload;
+                })
+                .finally(() => {
+                    hideLoadingModal();
+                });
+
+        });
+
+    </script>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <link rel="stylesheet" href="../css/admin.css">
+    
+</head>
+<body>
+    <div class="container">
+        <nav id="sidebar">
+            <ul>
+                <li class="active">
+                    <button id="barBt" onclick="toggleSidebar()">
+                        <!-- <i class="fa-solid fa-x"></i> -->
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </li>
+                <li>
+                    <a href="Home.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="changeIframeSrc('Dashboard.html')">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#" onclick="changeIframeSrc('adminDE/zone/zoneDetail.html')">
+                        <i class="fa-solid fa-map"></i>
+                        <span>Zone</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="changeIframeSrc('adminDE/employee/employeeDetail.html')">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>Employee</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="changeIframeSrc('adminDE/animal/animalsDetails.html')">
+                        <i class="fa-solid fa-crow"></i>
+                        <!-- <i class="fa-solid fa-folder"></i> -->
+                        <span>Animals details</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="changeIframeSrc('adminDE/animalCare/animalCareDetail.html')">
+                        <i class="fa-solid fa-hands-holding"></i>
+                        <span>Animal care</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="changeIframeSrc('adminDE/category/categoryDetail.html')">
+                        <i class="fa-solid fa-icons"></i>
+                        <span>Category</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" onclick="changeIframeSrc('adminDE/visitor/visitorDetail.html')">
+                        <i class="fa-solid fa-users-line"></i>
+                        <span>Visitor</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#" onclick="">
+                        <i class="fa-solid fa-icons"></i>
+                        <span>Category2</span>
+                    </a>
+                </li> -->
+
+                <li>
+                    <a href="#" id="logout-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <!-- หน้าหลักตอนรี -->
+        <div class="content">
+            <iframe id="iframe" src="Dashboard.html"></iframe>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="box1">
+                <H2>Logout</H2>
+            </div>
+            <div class="box1">
+                <p>Do you want to logout?</p>
+            </div>
+            <div class="box2">
+                <button onclick="confirmLogout()" class="m-bt-o">Confirm</button>
+                <button onclick="closeModal()" class="m-bt-o">Cancel</button>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../js/admin.js" defer></script>
+</html>
